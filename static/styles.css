@@ -20,7 +20,7 @@ header, footer {
     filter: url(content/pict1.jpg), progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--color1), endColorstr=var(--color2),GradientType=1 );
     background-size: contain;
 }
-/*Значок плей Свой стили лучше, наверное, обозначать по типу play-itd*/
+/*my уникальный префикс для моих классов, чтобы они не повторялись как в Брустрапе*/
 .my-play {
     background-color: var(--color1);
     /*Размеры квадрата*/
@@ -79,4 +79,32 @@ header, footer {
 }
 .bg2 {
     background-color: var(--color2);
+}
+.about {
+    background-color: #eee;
+}
+/*Для тега i класса about*/
+.about i {
+    font-size: 25px; /*Размер*/
+    color: var(--color2);
+}
+.my-circle {
+    margin: 0 auto 15px;
+    width: 70px;
+    height: 70px;
+    border: 3px solid var(--color2);
+    border-radius: 50%; /*Без этього свойства будет квадрат*/
+    display: flex; /*Чтобы отцентрировать*/
+    justify-content: center; /*Центрирование по горизонтале*/
+    align-items: center; /*Центрируем по вертикали*/
+}
+.line {
+    width: 100px;
+    height: 3px;
+    background-color: var(--color1);
+    margin: 15px auto 30px;
+}
+/*Аккардеон*/
+.my-acc1 {
+    background-image: url(content/pict1.jpg);
 }
