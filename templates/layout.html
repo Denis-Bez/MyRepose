@@ -1,23 +1,146 @@
 <!DOCTYPE html>
 
 <html lang="ru">
-    <head>
-        <link href="static/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <script src="static/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-        
-        <link href="static/styles.css" rel="stylesheet">
-        <link href="static/fontello.css" rel="stylesheet">
-        
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!--Желательно чтобы иконка была в формате .ico-->
-        <link rel="shortcut icon" href="static/content/favicon.png" type="image/x-icon">
-        <!--Вставить здесь переменную-->
-        <title>Layout</title>
-    </head>
 
-    <body>
-        {% block body %}{% endblock %}
-    </body>
+<head>
+  <link href="static/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="static/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+
+  <link href="static/styles.css" rel="stylesheet">
+  <link href="static/fontello.css" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!--Желательно чтобы иконка была в формате .ico-->
+  <link rel="shortcut icon" href="static/content/favicon.png" type="image/x-icon">
+
+  <!--Вставить здесь переменную-->
+  <title>Layout</title>
+</head>
+
+<header>
+  <div class="container-flex">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-muted text-white">ЭНЕРГО group<br>ЭКСПЕРТИЗА</h1>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container text-center p-100 mb-5">
+    <div class="row">
+      <div class="col-12">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#form1">Оставить заявку</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Модальное окно -->
+  <div class="modal fade" id="form1" tabindex="-1" aria-labelledby="form1Modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="form1Modal">Заголовок модального окна</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <form action="/email">
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" name="email" class="form-control" id="exampleInputEmail1"
+                      aria-describedby="emailHelp" placeholder=Denchick>
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" name="name" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+
+</header>
+
+
+
+<body>
+
+
+  <!--Сворачивающаяся навигация-->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Панель навигации</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse show" id="navbarCollapse" style="">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="/">О Нас</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="/services">Услуги и цены</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="/experts">Наши Эксперты</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="/contacts">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+  {% block body %}{% endblock %}
+
+</body>
+
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-right mb-1">
+      <a href="#">Наверх</a>
+    </p>
+    <p class="mb-1">
+      Общество с ограниченной ответственностью «ЭНЕРГОгрупп»
+
+      Директор: Безвершенко Василий Сергеевич
+      Свидетельство о внесении в ЕГРЮЛ: 59 № 004360320 от 01.06.2012
+      ИНН: 5902889059
+      КПП:590401001
+      ОГРН: 1125902003831
+      Юридический адрес: РФ, 614010, г. Пермь, ул. Героев Хасана, 7А, оф. 522
+      Почтовый адрес: РФ, 614010, г. Пермь, ул. Героев Хасана, 7А, оф. 522
+      
+      Телефон: +7(342) 200-85-05
+      Электронная почта: office@eg59.ru
+    </p>
+
+    <p class="mb-0">Группа компаний <a href="https://eg59.ru/">"ЭНЕРГО group"</a></p>
+  </div>
+</footer>
+
 </html>
