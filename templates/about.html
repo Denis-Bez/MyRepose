@@ -1,0 +1,137 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+
+<section>
+  <div class="container bg-light">
+    <div class="row">
+      <div class="col-lg-3 col-sm-12 mt-sm-5 mb-sm-5 text-center">
+        <img src="static/content/about.jpg" alt="" class="img-fluid">
+      </div>
+
+      <div class="col-lg-9 col-sm-12 p-4 align-self-center">
+        <h4><strong>НАШИ УСЛУГИ</strong></strong></h4>
+        <h5>Экспертиза электромонтажных работ до 500 кВ</h5>
+        <h5>Экспертиза промышленного электротехнического оборудования до 500 кВ</h5>
+        <h5>Экспертиза трансформаторных подстанций</h5>
+        <h5>Экспертиза кабельной продукции</h5>
+        <h5>Экспертиза оборудования РЗиА</h5>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container bg-light">
+    <div class="row">
+
+      <div class="col-lg-6 col-sm-12 p-4 align-self-center">
+        <h4><strong></strong>НАШИ ПРЕИМУЩЕСТВА</strong></h4>
+        <h5>Собственный инженерно-технический персонал</h5>
+        <h5>Собственный сметный отдел</h5>
+        <h5>Свой приборный парк</h5>
+        <h5>Своя лаборатория неразрушающего контроля</h5>
+        <h5>Своя аттестация технологии сварки и аттестованные специалисты НАКС</h5>
+      </div>
+
+      <div class="col-lg-6 col-sm-12 mt-sm-5 mb-sm-5 text-center">
+        <img src="static/content/about2.jpg" alt="Описание изображения" class="img-fluid img-thumbnail">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section>
+  <div class="container mb-4">
+    <div class="row">
+      <div class="col-12">
+        <img src="static/content/about3.jpg" alt="Описание изображения" class="img-fluid img-thumbnail">
+      <div class="col-12">
+        <h4>
+          О компании<br>
+За 7 лет успешной работы компания "ЭНЕРГОгрупп Экспертиза" заслужила статус надежного и дисциплинированного партнера. Нашими клиентами являются крупные промышленные компании и электрогенерации.
+Опыт наших инженеров и материально-технические ресурсы позволяют нам выполнять проекты любого масштаба и сложности. Выполняя свою работу, мы делаем ставку на результат и добиваемся значительного увеличения ресурсов и улучшения технико-экономичеких показателей работы электротехнического оборудования.
+Благодаря тесному взаимодействию на всех этапах работы, мы выстраиаем тесные и прозрачные отношения с заказчиком. Доверяя нам, Вы передаете проект в руки надежных и компетентных специалистов.
+"ЭНЕРГОгрупп Экспертиза"- Энергия в руках профессионалов!
+
+        </h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container pb-4 bg2">
+    <div class="row">
+      <div class="col-12">
+        <h3>Оставить заявку на экспертизу</h3>
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+<!-- Модальное окно -->
+<div class="modal fade" id="form1" tabindex="-1" aria-labelledby="form1Modal" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="form1Modal">Заголовок модального окна</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <form action="/email">
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder=Denchick>
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" name="name" class="form-control" id="exampleInputPassword1">
+                      </div>
+                      <button type="submit" class="btn btn-primary">Submit</button>
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+      </div>
+      <div class="modal-footer">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}

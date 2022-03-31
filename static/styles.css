@@ -5,7 +5,7 @@
     --color3: #17191F;
 }
 header, footer {
-    padding: 50px;
+    padding: 10px;
     background: url(/static/content/bg.png) center center no-repeat;
     background-color: var(--color3);
 }
@@ -17,13 +17,30 @@ pp001-about1 {
     justify-content: center;
     align-items: center;
 }
-/* .pp001-button1 {
-background: var(--color1);
-background: -moz-linear-gradient(left, var(--color1) 0%, #207cca 50%, #2989d8 50%, #207cca 50%, var(--color2) 100%);
-background: -webkit-linear-gradient(left, var(--color1) 0%,#207cca 50%,#2989d8 50%,#207cca 50%, var(--color2) 100%);
-background: linear-gradient(to right, var(--color1) 0%,#207cca 50%,#2989d8 50%,#207cca 50%, var(--color2) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--color1), endColorstr=var(--color2),GradientType=1 );
-background-size: contain;
+.line {
+    width: 200px;
+    height: 3px;
+    background-color: var(--color1);
+}
+.linew {
+    width: 200px;
+    height: 3px;
+    background-color: white;
+}
+.btn {
+    border-width: 0;
+    background: var(--color1);
+}
+.btn:hover {
+    border-width: 0;
+    background: var(--color2);
+}
+.btn:focus {
+    box-shadow: none;
+    background: var(--color1);
+  }
+/* .btn:active {
+    background: var(--color1);
 } */
 .nav-item:hover {
     background: var(--color2);
@@ -47,3 +64,30 @@ background-size: contain;
     background-color:rgba(0,0,0,.3);
     
 }
+.bgg2 {
+background: var(--color1);
+background: -moz-linear-gradient(left, var(--color1) 0%, #207cca 50%, #2989d8 50%, #207cca 50%, var(--color2) 100%);
+background:-webkit-linear-gradient(left, var(--color1) 0%,#207cca 50%,#2989d8 50%,#207cca 50%, var(--color2) 100%);
+background: linear-gradient(to right, var(--color1) 0%,#207cca 50%,#2989d8 50%,#207cca 50%, var(--color2) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--color1), endColorstr=var(--color2),GradientType=1 );
+background-size: contain;
+}
+.bgg1 {
+    background: var(--color2);
+    background: -moz-linear-gradient(left, var(--color2) 0%, #207cca 50%, #2989d8 50%, #207cca 50%, var(--color1) 100%);
+    background:-webkit-linear-gradient(left, var(--color2) 0%,#207cca 50%,#2989d8 50%,#207cca 50%, var(--color1) 100%);
+    background: linear-gradient(to right, var(--color2) 0%,#207cca 50%,#2989d8 50%,#207cca 50%, var(--color1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--color2), endColorstr=var(--color1),GradientType=1 );
+    background-size: contain;
+    }
+
+    .my-circle {
+        margin: 0 auto 15px;
+        width: 70px;
+        height: 70px;
+        border: 3px solid var(--color2);
+        border-radius: 50%; /*Без этього свойства будет квадрат*/
+        display: flex; /*Чтобы отцентрировать*/
+        justify-content: center; /*Центрирование по горизонтале*/
+        align-items: center; /*Центрируем по вертикали*/
+    }
