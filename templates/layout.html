@@ -16,7 +16,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <!--Желательно чтобы иконка была в формате .ico-->
+
   <link rel="shortcut icon" href="static/content/favicon.png" type="image/x-icon">
 
   <title>{{title}}</title>
@@ -53,7 +53,7 @@
           <div class="container">
             <div class="row">
               <div class="col-12">
-                <form action="/email">
+                <form action="/email" method="post">
                   <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Имя контактного лица</label>
                     <input type="phone" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Имя" >
@@ -70,8 +70,8 @@
                   </div>
 
                   <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label">Обращение</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <label for="exampleInputEmail1" class="form-label">Обращение</label>
+                    <textarea class="form-control" name="text" id="exampleFormControlTextarea1" rows="3" placeholder="Текст заявки"></textarea>
                   </div>
 
                   <button type="submit" class="btn btn-primary">Отправить</button>
@@ -128,7 +128,7 @@
 
 </body>
 
-<footer class="text-muted py-5">
+<footer class="text-muted">
   <div class="container">
     <p class="float-right mb-1">
       <a href="#">Наверх</a>

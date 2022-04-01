@@ -3,7 +3,74 @@
 {% block body %}
 
 
-<section class="bgg2">
+
+
+<div class="container mt-3 mb-3">
+  <div class="row">
+    <p class="h2">ВИДЫ ЭКСПЕРТИЗ</p>
+    <p class="h3">Проводим экспертизы по всей России</p>
+    <div class="line mb-4"></div>
+  </div>
+  <div class="row">
+
+    <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center mb-3">
+      <div class="card" style="width: 25rem;">
+        <img src="static/content/services1.jpg" class="card-img-top" alt="...">
+        <div class="card-body bg2 d-flex align-items-center justify-content-center">
+          <p class="card-text text-white">Экспертиза электромонтажных работ до 500кВ</p>      
+        </div>
+        <button type="button" class="btn btn-lgk btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#form1">Оставить заявку</button>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center mb-3">
+      <div class="card" style="width: 25rem;">
+        <img src="static/content/services2.jpg" class="card-img-top" alt="...">
+        <div class="card-body bg2 d-flex align-items-center justify-content-center">
+          <p class="card-text text-white">Экспертиза промышленного электротехнического оборудования до 500 кВ</p>
+        </div>
+        <button type="button" class="btn btn-lgk btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#form1">Оставить заявку</button>
+      </div>
+    </div>
+  
+    <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center mb-3">
+      <div class="card" style="width: 25rem;">
+        <img src="static/content/services3.jpg" class="card-img-top" alt="...">
+        <div class="card-body bg2 d-flex align-items-center justify-content-center">
+          <p class="card-text text-white">Экспертиза трансформаторных подстанций</p>
+        </div>
+        <button type="button" class="btn btn-lgk btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#form1">Оставить заявку</button>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center mb-3">
+      <div class="card" style="width: 25rem;">
+        <img src="static/content/services4.jpg" class="card-img-top" alt="...">
+        <div class="card-body bg2 d-flex align-items-center justify-content-center">
+          <p class="card-text text-white">Экспертиза кабельной продукции</p>
+        </div>
+        <button type="button" class="btn btn-lgk btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#form1">Оставить заявку</button>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center mb-3">
+      <div class="card" style="width: 25rem;">
+        <img src="static/content/services5.jpg" class="card-img-top" alt="...">
+        <div class="card-body bg2 d-flex align-items-center justify-content-center">
+          <p class="card-text text-white">Экспертиза оборудования РЗиА</p>
+        </div>
+        <button type="button" class="btn btn-lgk btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#form1">Оставить заявку</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+<!-- <section>
 <div class="container">
   <div class="row">
     <p class="h2">ВИДЫ ЭКСПЕРТИЗ</p>
@@ -18,8 +85,8 @@
           <h4 class="my-0 font-weight-normal">Экспертиза электромонтажных работ<br> до 500кВ</h4>
         </div>
         <div class="card-body p-0">
-          <img src="static/content/services1.jpg" alt="Описание изображения" class="img-fluid mb-2"><br>
-          <button type="button" class="btn btn-lg btn-block btn-primary mb-2">Оставить заявку</button>
+          <img src="static/content/services1.jpg" alt="Описание изображения"><br>
+          <button type="button" class="btn btn-lg btn-block btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#form1">Оставить заявку</button>
         </div>
       </div>
       </div>
@@ -30,8 +97,8 @@
           <h4 class="my-0 font-weight-normal">Экспертиза промышленного электротехнического оборудования до 500 кВ</h4>
         </div>
         <div class="card-body p-0">
-          <img src="static/content/services2.jpg" alt="Описание изображения" class="img-fluid mb-2"><br>
-          <button type="button" class="btn btn-lg btn-block btn-primary mb-2">Оставить заявку</button>
+          <img src="static/content/services2.jpg" alt="Описание изображения" class="card-img-top"><br>
+          <button type="button" class="btn btn-lg btn-block btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#form1">Оставить заявку</button>
         </div>
       </div>
       </div>
@@ -44,7 +111,7 @@
       </div>
       <div class="card-body p-0">
         <img src="static/content/services3.jpg" alt="Описание изображения" class="img-fluid mb-2">
-        <button type="button" class="btn btn-lg btn-block btn-primary mb-2">Оставить заявку</button>
+        <button type="button" class="btn btn-lg btn-block btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#form1">Оставить заявку</button>
       </div>
     </div>
     </div>
@@ -57,7 +124,7 @@
     </div>
     <div class="card-body p-0">
       <img src="static/content/services4.jpg" alt="Описание изображения" class="img-fluid mb-2">
-      <button type="button" class="btn btn-lg btn-block btn-primary mb-2">Оставить заявку</button>
+      <button type="button" class="btn btn-lg btn-block btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#form1">Оставить заявку</button>
     </div>
   </div>
   </div>
@@ -69,7 +136,7 @@
     </div>
     <div class="card-body p-0">
       <img src="static/content/services5.jpg" alt="Описание изображения" class="img-fluid mb-2">
-      <button type="button" class="btn btn-lg btn-block btn-primary mb-2">Оставить заявку</button>
+      <button type="button" class="btn btn-lg btn-block btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#form1">Оставить заявку</button>
     </div>
   </div>
   </div>
@@ -77,8 +144,8 @@
 </div>
 
 </div>
+</Section> -->
 
-</Section>
 
 
 

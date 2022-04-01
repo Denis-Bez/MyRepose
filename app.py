@@ -20,15 +20,8 @@ app.config["MAIL_USERNAME"] = CONFIG["MAIL_USERNAME"]
 mail = Mail(app)
 
 # Main html
-@app.route("/") #methods=["POST", "GET"]
+@app.route("/")
 def index():
-
-#    if request.method == "POST":
-#        msg = Message("Hey", recipients=['v417459@yandex.ru'])
-#        msg.body = ("Hey how are you& Is everything okay&")
-#        mail.send(msg)
-
-    #return render_template("services.html")
 
     return render_template("index.html", title=title["index"])
 
@@ -48,12 +41,21 @@ def contacts():
     return render_template("contacts.html")
 
 # Invisible html
-@app.route("/email")
+@app.route("/email", methods=["POST", "GET"])
 def email():
 
-    msg = Message("Hey", recipients=['v417459@yandex.ru'])
-    msg.body = ("Hey how are you& Is everything okay&")
-    mail.send(msg)
+    name = request.form.get("name")
+    phone = request.form.get("phone")
+    email = request.form.get("email")
+    text = request.form.get("text")
+
+    if request.method == "POST":
+        msg = Message("Заявка на экспертизу", recipients=['v417459@yandex.ru'])
+        msg_client = Message("Заявка успешно отправлена", recipients=[email])
+        msg.body = (f"Имя клиента: {name}\nТелефон клиента: {phone}\nEmail заявки: {email}\nТекст заявки: {text}")
+        msg_client.body = (f"Мы получили заявку на экспертизу. Свяжемся с вами в ближайшее время для уточнения информации по экспертизе")
+        mail.send(msg)
+        mail.send(msg_client)
 
     return render_template("index.html")
 
