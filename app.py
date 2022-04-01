@@ -3,45 +3,47 @@ from config import CONFIG
 from flask import Flask, render_template, redirect, request
 from flask_mail import Mail, Message
 
-app = Flask (__name__)
+appllication = Flask (__name__)
 
 title = {
     "index": "ЭНЕРГО group Экспертиза - Энергия в руках профессионалов",
-    "services": "Заказать экспертизу электротехнических работ и оборудования" 
+    "services": "Заказать экспертизу электротехнических работ и оборудования",
+    "experts": "Эксперты в области электротехнических работ",
+    "contacts": "Отправьте заявку и мы с вами свяжемся"
 }
 
-app.config["MAIL_DEFAULT_SENDER"] = CONFIG["MAIL_DEFAULT_SENDER"]
-app.config["MAIL_PASSWORD"] = CONFIG["MAIL_PASSWORD"]
-app.config["MAIL_PORT"] = 465
-app.config["MAIL_SERVER"] = "smtp.gmail.com"
-app.config["MAIL_USE_TLS"] = False
-app.config["MAIL_USE_SSL"] = True
-app.config["MAIL_USERNAME"] = CONFIG["MAIL_USERNAME"]
-mail = Mail(app)
+appllication.config["MAIL_DEFAULT_SENDER"] = CONFIG["MAIL_DEFAULT_SENDER"]
+appllication.config["MAIL_PASSWORD"] = CONFIG["MAIL_PASSWORD"]
+appllication.config["MAIL_PORT"] = 465
+appllication.config["MAIL_SERVER"] = "smtp.gmail.com"
+appllication.config["MAIL_USE_TLS"] = False
+appllication.config["MAIL_USE_SSL"] = True
+appllication.config["MAIL_USERNAME"] = CONFIG["MAIL_USERNAME"]
+mail = Mail(appllication)
 
 # Main html
-@app.route("/")
+@appllication.route("/")
 def index():
 
     return render_template("index.html", title=title["index"])
 
-@app.route("/services")
+@appllication.route("/services")
 def services():
 
-    return render_template("services.html")
+    return render_template("services.html", title=title["services"])
 
-@app.route("/experts")
+@appllication.route("/experts")
 def experts():
 
-    return render_template("experts.html")
+    return render_template("experts.html", title=title["experts"])
 
-@app.route("/contacts")
+@appllication.route("/contacts")
 def contacts():
 
-    return render_template("contacts.html")
+    return render_template("contacts.html", title=title["contacts"])
 
 # Invisible html
-@app.route("/email", methods=["POST", "GET"])
+@appllication.route("/email", methods=["POST", "GET"])
 def email():
 
     name = request.form.get("name")
@@ -61,4 +63,4 @@ def email():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    appllication.run(debug=True)
