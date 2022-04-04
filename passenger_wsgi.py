@@ -8,4 +8,4 @@ if sys.executable != INTERP:
 
 sys.path.append(os.getcwd())
 
-from app import appllication
+from app import application

@@ -3,7 +3,7 @@ from config import CONFIG
 from flask import Flask, render_template, redirect, request
 from flask_mail import Mail, Message
 
-appllication = Flask (__name__)
+application = Flask (__name__)
 
 title = {
     "index": "ЭНЕРГО group Экспертиза - Энергия в руках профессионалов",
@@ -12,38 +12,38 @@ title = {
     "contacts": "Отправьте заявку и мы с вами свяжемся"
 }
 
-appllication.config["MAIL_DEFAULT_SENDER"] = CONFIG["MAIL_DEFAULT_SENDER"]
-appllication.config["MAIL_PASSWORD"] = CONFIG["MAIL_PASSWORD"]
-appllication.config["MAIL_PORT"] = 465
-appllication.config["MAIL_SERVER"] = "smtp.gmail.com"
-appllication.config["MAIL_USE_TLS"] = False
-appllication.config["MAIL_USE_SSL"] = True
-appllication.config["MAIL_USERNAME"] = CONFIG["MAIL_USERNAME"]
-mail = Mail(appllication)
+application.config["MAIL_DEFAULT_SENDER"] = CONFIG["MAIL_DEFAULT_SENDER"]
+application.config["MAIL_PASSWORD"] = CONFIG["MAIL_PASSWORD"]
+application.config["MAIL_PORT"] = 465
+application.config["MAIL_SERVER"] = "mail.eg-expert.ru"
+application.config["MAIL_USE_TLS"] = False
+application.config["MAIL_USE_SSL"] = True
+application.config["MAIL_USERNAME"] = CONFIG["MAIL_USERNAME"]
+mail = Mail(application)
 
 # Main html
-@appllication.route("/")
+@application.route("/")
 def index():
 
     return render_template("index.html", title=title["index"])
 
-@appllication.route("/services")
+@application.route("/services")
 def services():
 
     return render_template("services.html", title=title["services"])
 
-@appllication.route("/experts")
+@application.route("/experts")
 def experts():
 
     return render_template("experts.html", title=title["experts"])
 
-@appllication.route("/contacts")
+@application.route("/contacts")
 def contacts():
 
     return render_template("contacts.html", title=title["contacts"])
 
 # Invisible html
-@appllication.route("/email", methods=["POST", "GET"])
+@application.route("/email", methods=["POST", "GET"])
 def email():
 
     name = request.form.get("name")
@@ -59,8 +59,8 @@ def email():
         mail.send(msg)
         mail.send(msg_client)
 
-    return render_template("index.html")
+    return redirect ("/")
 
 
 if __name__ == "__main__":
-    appllication.run(debug=True)
+    application.run(debug=True)
