@@ -54,10 +54,17 @@ def email():
     if request.method == "POST":
         msg = Message("Заявка на экспертизу", recipients=['v417459@yandex.ru'])
         msg_client = Message("Заявка успешно отправлена", recipients=[email])
-        msg.body = (f"Имя клиента: {name}\nТелефон клиента: {phone}\nEmail заявки: {email}\nТекст заявки: {text}")
         msg_client.body = (f"Мы получили заявку на экспертизу. Свяжемся с вами в ближайшее время для уточнения информации по экспертизе")
+        
+        try:
+            mail.send(msg_client)
+            status = "Подтверждение на почту отправлено"
+        except:
+            status = "Подтверждение на почту не отправлено"
+
+        msg.body = (f"Имя клиента: {name}\nТелефон клиента: {phone}\nEmail заявки: {email}\nТекст заявки: {text}\nСтатус отправки письма клиенту: {status}")
         mail.send(msg)
-        mail.send(msg_client)
+        
 
     return redirect ("/")
 
