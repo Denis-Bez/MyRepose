@@ -9,6 +9,11 @@ header, footer {
     background: url(/static/content/bg.png) center center no-repeat;
     background-color: var(--color3);
 }
+.background {
+    background: url(/static/content/bg1.jpg) center center no-repeat;
+    background-color: var(--color3);
+    background-size: cover;
+}
 section {
     padding: 10px 0;
 }
@@ -16,6 +21,17 @@ pp001-about1 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.link_without_underline {
+    text-decoration: none;
+}
+.card {
+    border-color: var(--color1)!important;
+    width: 20rem;
+}
+.card .btn {
+    border-radius: 0;
 }
 .line {
     width: 200px;
@@ -39,9 +55,6 @@ pp001-about1 {
     box-shadow: none;
     background: var(--color1);
   }
-/* .btn:active {
-    background: var(--color1);
-} */
 .nav-item:hover {
     background: var(--color2);
     border-color: var(--color2);

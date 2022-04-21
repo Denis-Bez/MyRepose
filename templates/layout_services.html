@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+    ym(88245762, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/88245762" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+
+  <link href="static/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="static/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link href="static/styles.css" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <title>{{title}}</title>
+  <meta name="description" content="{{description}}"/>
+</head>
+
+
+<header>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 col-sm-12 mb-3 align-self-start">
+        <a class="link_without_underline" href="/">
+          <h1 class="text-white m-0">ЭНЕРГО group</h1>
+        </a>
+        <a class="link_without_underline" href="/">
+          <h4 class="text-white m-0">ЭКСПЕРТИЗА</h4>
+        </a>
+        <div class="line"></div>
+      </div>
+
+      <div class="col-12 text-end">
+
+        <div class="col d-flex text-end justify-content-end align-items-center mb-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+            class="me-1 bi bi-envelope-fill color1" viewBox="0 0 16 16">
+            <path
+              d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+          </svg>
+          <h6 class="mb-1"><a href="mailto:expert@eg59.ru" class="text-white">expert@eg59.ru</a></h6>
+        </div>
+
+        <div class="col d-flex text-end justify-content-end align-items-center mb-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+            class="me-1 bi bi-telephone-fill color1" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+          </svg>
+          <h6 class="text-white mb-1">+7(342) 200-85-05</h6>
+        </div>
+
+        <p class="mb-0 h9 text-white mb-2">Группа компаний <a class="link-info" href="https://eg59.ru/">"ЭНЕРГО
+            group"</a></p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#form1">Оставить
+          заявку</button>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Модальное окно -->
+  <div class="modal fade" id="form1" tabindex="-1" aria-labelledby="form1Modal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bgg1 text-white">
+        <div class="modal-header">
+          <h5 class="modal-title" id="form1Modal">Оставьте заявку на экспертизу и мы с вами свяжемся</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <form action="/email" method="post">
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Имя контактного лица</label>
+                    <input type="phone" name="name" class="form-control" id="exampleInputEmail1"
+                      aria-describedby="emailHelp" placeholder="Имя">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Номер телефона</label>
+                    <input type="text" name="phone" class="form-control" id="exampleInputEmail1"
+                      aria-describedby="emailHelp" placeholder="Телефон с кодом города*">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Адрес электронной почты</label>
+                    <input type="text" name="email" class="form-control" id="exampleInputEmail1"
+                      aria-describedby="emailHelp" placeholder="example@email.ru*">
+                  </div>
+
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Обращение</label>
+                    <textarea class="form-control" name="text" id="exampleFormControlTextarea1" rows="3"
+                      placeholder="Текст заявки"></textarea>
+                  </div>
+
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="checkboxServices" name="checkbox"
+                      onchange="document.getElementById('submitServices').disabled = !this.checked;">
+                    <label class="form-check-label small" for="checkboxServices">Я даю согласие на обработку своих персональных
+                        данных, и согласен с <a href="/privacy" target="_blank" class="link-warning">Политикой конфиденциальности</a></label>
+                  </div>
+
+                  <button type="submit" disabled="disabled" name="submit" id="submitServices" class="btn btn-primary">Отправить</button>
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+</header>
+
+
+<body>
+
+  <!--Сворачивающаяся навигация-->
+  <nav class="navbar navbar-expand-md navbar-dark bgg1">
+    <div class="container-fluid">
+      <a href="/"><img src="static/content/logo.png" alt="logo.png" style="max-height: 50px" class="img-fluid"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+        aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="navbar-collapse collapse" id="navbarCollapse">
+        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="/">О компании</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="/services">Виды экспертиз</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="/experts">Наши эксперты</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" aria-current="page" href="/contacts">Контакты</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="background p-5">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center">
+          <p class="h1 text-white">Выполним независимую <strong class="color1">экспертизу</strong></p><br>
+          <strong class="h1 text-white"><ins>{{expertise_name}}</ins></strong>
+        </div>
+      </div>
+      <div class="row pt-5">
+
+        <div class="col-sm-12 col-md-6">
+          <form action="/email" method="post" class="p-3 bgg1 text-white shadow-lg rounded-3">
+            <label class="form-label h3">Получите бесплатную консультацию у экспертов в области электромонтажа,
+              электротехники и энергетике по вашей проблеме</label>
+            <div class="line mb-3"></div>
+            <div class="mb-3">
+              <label for="InputName" class="form-label">Имя контактного лица</label>
+              <input type="text" name="name" class="form-control" id="InputName" placeholder="Имя">
+            </div>
+            <div class="mb-3">
+              <label for="InputPhone" class="form-label">Номер телефона</label>
+              <input type="text" name="phone" class="form-control" id="InputPhone"
+                placeholder="Телефон с кодом города*">
+            </div>
+            <div class="mb-3">
+              <label for="InputEmail" class="form-label">Адрес электронной почты</label>
+              <input type="email" name="email" class="form-control" id="InputEmail"
+                placeholder="example@email.ru*">
+            </div>
+            <div class="mb-3">
+              <label for="InputTextarea" class="form-label">Обращение</label>
+              <textarea class="form-control" name="text" id="InputTextarea" rows="3"
+                placeholder="Текст заявки"></textarea>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="checkbox" name="checkbox"
+                onchange="document.getElementById('submit').disabled = !this.checked;">
+              <label class="form-check-label small" for="checkbox">Я даю согласие на обработку своих персональных
+                  данных, и согласен с <a href="/privacy" target="_blank" class="link-warning">Политикой конфиденциальности</a></label>
+            </div>
+            <input type="submit" disabled="disabled" name="submit" id="submit" class="btn btn-primary">
+          </form>
+        </div>
+
+        <div class="col-sm-12 col-md-6 align-self-center">
+          <div class="row">
+            <img src="static/content/icon/russia_country_icon.svg" alt="..." style="max-height: 200px"
+              class="img-fluid">
+          </div>
+          <div class="row text-center">
+            <p class="h2 text-white">Наши эксперты работают по всей стране</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 pb-3">
+          <p class="h2 m-4">Необходимо провести экспертизу <strong class="color1">{{expertise_name}}</strong>?</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4 col-sm-12 d-flex justify-content-center mb-3">
+          <div class="card border-4 rounded shadow">
+            <div class="card-body bg2 d-flex align-items-center justify-content-center">
+              <p class="card-text text-white h2">Установим причину аварии, дефекта или отказа</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-12 d-flex justify-content-center mb-3">
+          <div class="card border-4 rounded">
+            <div class="card-body bg2 d-flex align-items-center justify-content-center">
+              <p class="card-text text-white h2">Проверим объем и качество выполненных работ по монтажу, пусконаладки или
+                ремонту оборудования</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-12 d-flex justify-content-center mb-3">
+          <div class="card border-4 rounded">
+            <div class="card-body bg2 d-flex align-items-center justify-content-center">
+              <p class="card-text text-white h2">Проверим объект на предмет соблюдения проекта</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-12 d-flex justify-content-center mb-3">
+          <div class="card border-4 rounded">
+            <div class="card-body bg2 d-flex align-items-center justify-content-center">
+              <p class="card-text text-white h2">Проверим соответствие продукции нормативно-технической документации ГОСТ,
+                ПУЭ, ПТЭЭП</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-12 d-flex justify-content-center mb-3">
+          <div class="card border-4 rounded">
+            <div class="card-body bg2 d-flex align-items-center justify-content-center">
+              <p class="card-text text-white h2">Проверим оборудование на соответсвие паспортным характеристикам</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="bgg2">
+    <div class="container mt-5 mb-5">
+      <div class="row d-flex align-items-center justify-content-center">
+        <p class="h2 text-white text-center pb-3">Выполним весь комплекс работ по экспертизе</p>
+        <div class="col-sm-12 col-md-5">
+          <img src="static/content/services_docs.jpg" alt="..." class="img-fluid img-thumbnail">
+        </div>
+
+        <div class="col-sm-12 col-md-7">
+          <div class="accordion" id="accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Несудебная Экспертиза
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordion">
+                <div class="accordion-body bg1">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item bg1 text-white">На основании имеющихся данных производим первичный анализ
+                      проблемы</li>
+                    <li class="list-group-item bg1 text-white">Оцениваем вероятность на успешное для Вас экспертное
+                      заключение</li>
+                    <li class="list-group-item bg1 text-white">Грамотно сформулируем вопросы, которые помогут в
+                      скорейшем разрешении спора</li>
+                    <li class="list-group-item bg1 text-white">Выезд эксперта на объект и составление акта осмотра</li>
+                    <li class="list-group-item bg1 text-white">Выполнение всех необходимых испытаний и измерений</li>
+                    <li class="list-group-item bg1 text-white">Подготовка и согласование экспертного заключения</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Судебная Экспертиза (N 73-ФЗ от 21.05.2001)
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordion">
+                <div class="accordion-body bg1">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item bg1 text-white">Получение запроса на судебную экспертизу</li>
+                    <li class="list-group-item bg1 text-white">Составляем письмо для ходатайства о назначении судебной
+                      экспертизы. Указываем стоимость, сроки и подтверждаем компетенции экспертов</li>
+                    <li class="list-group-item bg1 text-white">Получение определения суда. Приступаем к выполнению работ
+                      по экспертизе</li>
+                    <li class="list-group-item bg1 text-white">Выезд эксперта на объект и составление акта осмотра</li>
+                    <li class="list-group-item bg1 text-white">Выполнение всех необходимых испытаний и измерений</li>
+                    <li class="list-group-item bg1 text-white">Подготовка и согласование экспертного заключения и
+                      направление его в суд</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Рецензия Экспертного заключения
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordion">
+                <div class="accordion-body bg1">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item bg1 text-white">Получение заявки на рецензирование экспертного заключения
+                    </li>
+                    <li class="list-group-item bg1 text-white">Консультируем по выявленным недостаткам и
+                      целесообразности подготовки рецензии</li>
+                    <li class="list-group-item bg1 text-white">Исследование экспертного заключения</li>
+                    <li class="list-group-item bg1 text-white">Подготовка и согласование рецензии</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-6 col-sm-12 p-4 align-self-center h3">
+          <h2 class="color1"><strong>НАШИ ПРЕИМУЩЕСТВА</strong></h4>
+            <ul>
+              <li class="mb-3">Штатные эксперты</li>
+              <li class="mb-3">Инженерно-технический персонал</li>
+              <li class="mb-3">Сметный отдел</li>
+              <li class="mb-3">Свой приборный парк</li>
+              <li class="mb-3">Своя электролаборатория до 500 кВ</li>
+              <li class="mb-3">Своя лаборатория неразрушающего контроля</li>
+              <li class="mb-3">Своя аттестация технологии сварки и аттестованные специалисты НАКС</li>
+            </ul>
+
+        </div>
+
+        <div class="col-lg-6 col-sm-12 mt-sm-5 mb-sm-5 text-center">
+          <img src="static/content/services_new15.jpg" alt="..." class="img-fluid img-thumbnail">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container-fluid pb-5">
+      <div class="row pt-5 d-flex align-items-center justify-content-center">
+
+        <div class="col-10">
+          <form action="/email" method="post" class="p-3 bgg1 text-white shadow rounded-3">
+            <label class="form-label h3">Закажите обратный звонок</label>
+            <div class="line mb-3"></div>
+            <div class="mb-3">
+              <label for="InputNameFooter" class="form-label">Имя контактного лица</label>
+              <input type="text" name="name" class="form-control" id="InputNameFooter" placeholder="Имя">
+            </div>
+            <div class="mb-3">
+              <label for="InputPhoneFooter" class="form-label">Номер телефона</label>
+              <input type="text" name="phone" class="form-control" id="InputPhoneFooter"
+                placeholder="Телефон с кодом города*">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="checkboxFooter" name="checkbox"
+                onchange="document.getElementById('submitFooter').disabled = !this.checked;">
+              <label class="form-check-label small" for="checkboxFooter">Я даю согласие на обработку своих персональных
+                  данных, и согласен с <a href="/privacy" target="_blank" class="link-warning">Политикой конфиденциальности</a></label>
+            </div>
+            <input type="submit" disabled="disabled" name="submit" id="submitFooter" class="btn btn-primary">
+          </form>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+</body>
+
+<footer class="text-muted">
+  <div class="container">
+    <p class="float-right mb-1">
+      <a href="#">Наверх</a>
+    </p>
+    <p class="mb-1">
+      &#169 Общество с ограниченной ответственностью «ЭНЕРГОгрупп»
+
+      Свидетельство о внесении в ЕГРЮЛ: 59 № 004360320 от 01.06.2012
+      ИНН: 5902889059
+      КПП:590401001
+      ОГРН: 1125902003831
+
+      Телефон: +7(342) 200-85-05
+      Электронная почта: <a href="mailto:expert@eg59.ru" class="text-white">expert@eg59.ru</a>
+    </p>
+
+    <p class="mb-0">Группа компаний <a href="https://eg59.ru/">"ЭНЕРГО group"</a></p>
+    <p class="mb-0 text-muted small"><a href="/privacy" target="_blank">Политика конфиденциальности</a></p>
+  </div>
+</footer>
+
+</html>
