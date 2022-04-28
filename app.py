@@ -68,6 +68,12 @@ def email():
 
     return redirect ("/")
 
+# Sitemap route
+@application.route("/sitemap.xml")
+def sitemap():
+
+    return render_template("sitemap.xml")
+
 
 # Verification Yandex
 @application.route("/yandex_dafd13b4bd118941.html")
@@ -84,69 +90,113 @@ def yandex_verification():
 
 # All exprertises pages
 
-@application.route("/expertise_cabling")
-def expertise_cabling():
-    return render_template("expertise_cabling.html", expertise_name=expertise_name["expertise_cabling"], title=title["expertise_cabling"], description=description["expertise_cabling"])
+@application.route("/services/cabling")
+def cabling():
+    return render_template("/services/cabling.html", expertise_name=expertise_name["cabling"], title=title["cabling"], description=description["cabling"])
 
-@application.route("/expertise_inst_couplings")
-def expertise_inst_couplings():
-    return render_template("expertise_inst_couplings.html", expertise_name=expertise_name["expertise_inst_couplings"], title=title["expertise_inst_couplings"], description=description["expertise_inst_couplings"])
+@application.route("/services/inst_couplings")
+def inst_couplings():
+    return render_template("/services/inst_couplings.html", expertise_name=expertise_name["inst_couplings"], title=title["inst_couplings"], description=description["inst_couplings"])
 
-@application.route("/expertise_inst_cablestruct")
-def expertise_inst_cablestruct():
-    return render_template("expertise_inst_cablestruct.html", expertise_name=expertise_name["expertise_inst_cablestruct"], title=title["expertise_inst_cablestruct"], description=description["expertise_inst_cablestruct"])
+@application.route("/services/inst_cablestruct")
+def inst_cablestruct():
+    return render_template("/services/inst_cablestruct.html", expertise_name=expertise_name["inst_cablestruct"], title=title["inst_cablestruct"], description=description["inst_cablestruct"])
 
-@application.route("/expertise_lighting")
-def expertise_lighting():
-    return render_template("expertise_lighting.html", expertise_name=expertise_name["expertise_lighting"], title=title["expertise_lighting"], description=description["expertise_lighting"])
+@application.route("/services/lighting")
+def lighting():
+    return render_template("/services/lighting.html", expertise_name=expertise_name["lighting"], title=title["lighting"], description=description["lighting"])
 
-@application.route("/expertise_InstSwitchgears")
-def expertise_InstSwitchgears():
-    return render_template("expertise_InstSwitchgears.html", expertise_name=expertise_name["expertise_InstSwitchgears"], title=title["expertise_InstSwitchgears"], description=description["expertise_InstSwitchgears"])
+@application.route("/services/inst_switchgears")
+def inst_switchgears():
+    return render_template("/services/inst_switchgears.html", expertise_name=expertise_name["inst_switchgears"], title=title["inst_switchgears"], description=description["inst_switchgears"])
 
-@application.route("/expertise_InstGroundLoop")
-def expertise_InstGroundLoop():
-    return render_template("expertise_InstGroundLoop.html", expertise_name=expertise_name["expertise_InstGroundLoop"], title=title["expertise_InstGroundLoop"], description=description["expertise_InstGroundLoop"])
+@application.route("/services/inst_ground_loop")
+def inst_ground_loop():
+    return render_template("/services/inst_ground_loop.html", expertise_name=expertise_name["inst_ground_loop"], title=title["inst_ground_loop"], description=description["inst_ground_loop"])
 
-@application.route("/expertise_ReactCompensation")
-def expertise_ReactCompensation():
-    return render_template("expertise_ReactCompensation.html", expertise_name=expertise_name["expertise_ReactCompensation"], title=title["expertise_ReactCompensation"], description=description["expertise_ReactCompensation"])
+@application.route("/services/react_compensation")
+def react_compensation():
+    return render_template("/services/react_compensation.html", expertise_name=expertise_name["react_compensation"], title=title["react_compensation"], description=description["react_compensation"])
 
-@application.route("/expertise_SmoothStart")
-def expertise_SmoothStart():
-    return render_template("expertise_SmoothStart.html", expertise_name=expertise_name["expertise_SmoothStart"], title=title["expertise_SmoothStart"], description=description["expertise_SmoothStart"])
+@application.route("/services/smooth_start")
+def smooth_start():
+    return render_template("/services/smooth_start.html", expertise_name=expertise_name["smooth_start"], title=title["smooth_start"], description=description["smooth_start"])
 
-@application.route("/expertise_ElectricMotor")
-def expertise_ElectricMotor():
-    return render_template("expertise_ElectricMotor.html", expertise_name=expertise_name["expertise_ElectricMotor"], title=title["expertise_ElectricMotor"], description=description["expertise_ElectricMotor"])
+@application.route("/services/electric_motor")
+def electric_motor():
+    return render_template("/services/electric_motor.html", expertise_name=expertise_name["electric_motor"], title=title["electric_motor"], description=description["electric_motor"])
 
-@application.route("/expertise_Generator")
-def expertise_Generator():
-    return render_template("expertise_Generator.html", expertise_name=expertise_name["expertise_Generator"], title=title["expertise_Generator"], description=description["expertise_Generator"])
+@application.route("/services/generator")
+def generator():
+    return render_template("/services/generator.html", expertise_name=expertise_name["generator"], title=title["generator"], description=description["generator"])
 
-@application.route("/expertise_SystemGenerator")
-def expertise_SystemGenerator():
-    return render_template("expertise_SystemGenerator.html", expertise_name=expertise_name["expertise_SystemGenerator"], title=title["expertise_SystemGenerator"], description=description["expertise_SystemGenerator"])
+@application.route("/services/system_generator")
+def system_generator():
+    return render_template("/services/system_generator.html", expertise_name=expertise_name["system_generator"], title=title["system_generator"], description=description["system_generator"])
 
-@application.route("/expertise_Conductor")
-def expertise_Conductor():
-    return render_template("expertise_Conductor.html", expertise_name=expertise_name["expertise_Conductor"], title=title["expertise_Conductor"], description=description["expertise_Conductor"])
+@application.route("/services/conductor")
+def conductor():
+    return render_template("/services/conductor.html", expertise_name=expertise_name["conductor"], title=title["conductor"], description=description["conductor"])
 
-@application.route("/expertise_PowerTrans")
-def expertise_PowerTrans():
-    return render_template("expertise_PowerTrans.html", expertise_name=expertise_name["expertise_PowerTrans"], title=title["expertise_PowerTrans"], description=description["expertise_PowerTrans"])
+@application.route("/services/power_trans")
+def power_trans():
+    return render_template("/services/power_trans.html", expertise_name=expertise_name["power_trans"], title=title["power_trans"], description=description["power_trans"])
 
-@application.route("/expertise_Reactor")
-def expertise_Reactor():
-    return render_template("expertise_Reactor.html", expertise_name=expertise_name["expertise_Reactor"], title=title["expertise_Reactor"], description=description["expertise_Reactor"])
+@application.route("/services/reactor")
+def reactor():
+    return render_template("/services/reactor.html", expertise_name=expertise_name["reactor"], title=title["reactor"], description=description["reactor"])
 
-@application.route("/expertise_ConstructionSwitch")
-def expertise_ConstructionSwitch():
-    return render_template("expertise_ConstructionSwitch.html", expertise_name=expertise_name["expertise_ConstructionSwitch"], title=title["expertise_ConstructionSwitch"], description=description["expertise_ConstructionSwitch"])
+@application.route("/services/construction_switch")
+def construction_switch():
+    return render_template("/services/construction_switch.html", expertise_name=expertise_name["construction_switch"], title=title["construction_switch"], description=description["construction_switch"])
 
-@application.route("/expertise_Disconnector")
-def expertise_Disconnector():
-    return render_template("expertise_Disconnector.html", expertise_name=expertise_name["expertise_Disconnector"], title=title["expertise_Disconnector"], description=description["expertise_Disconnector"])
+@application.route("/services/disconnector")
+def disconnector():
+    return render_template("/services/disconnector.html", expertise_name=expertise_name["disconnector"], title=title["disconnector"], description=description["disconnector"])
+
+@application.route("/services/isolator")
+def isolator():
+    return render_template("/services/isolator.html", expertise_name=expertise_name["isolator"], title=title["isolator"], description=description["isolator"])
+
+@application.route("/services/busbar_support")
+def busbar_support():
+    return render_template("/services/busbar_support.html", expertise_name=expertise_name["busbar_support"], title=title["busbar_support"], description=description["busbar_support"])
+
+@application.route("/services/busbar_flex")
+def busbar_flex():
+    return render_template("/services/busbar_flex.html", expertise_name=expertise_name["busbar_flex"], title=title["busbar_flex"], description=description["busbar_flex"])
+
+@application.route("/services/switchgears")
+def switchgears():
+    return render_template("/services/switchgears.html", expertise_name=expertise_name["switchgears"], title=title["switchgears"], description=description["switchgears"])
+
+@application.route("/services/cable")
+def cable():
+    return render_template("/services/cable.html", expertise_name=expertise_name["cable"], title=title["cable"], description=description["cable"])
+
+@application.route("/services/cell_protection")
+def cell_protection():
+    return render_template("/services/cell_protection.html", expertise_name=expertise_name["cell_protection"], title=title["cell_protection"], description=description["cell_protection"])
+
+@application.route("/services/transfer_devices")
+def transfer_devices():
+    return render_template("/services/transfer_devices.html", expertise_name=expertise_name["transfer_devices"], title=title["transfer_devices"], description=description["transfer_devices"])
+
+@application.route("/services/transfer_panel")
+def transfer_panel():
+    return render_template("/services/transfer_panel.html", expertise_name=expertise_name["transfer_panel"], title=title["transfer_panel"], description=description["transfer_panel"])
+
+@application.route("/services/protection_panel")
+def protection_panel():
+    return render_template("/services/protection_panel.html", expertise_name=expertise_name["protection_panel"], title=title["protection_panel"], description=description["protection_panel"])
+
+@application.route("/services/emergency_panel")
+def emergency_panel():
+    return render_template("/services/emergency_panel.html", expertise_name=expertise_name["emergency_panel"], title=title["emergency_panel"], description=description["emergency_panel"])
+
+@application.route("/services/automation_panel")
+def automation_panel():
+    return render_template("/services/automation_panel.html", expertise_name=expertise_name["automation_panel"], title=title["automation_panel"], description=description["automation_panel"])
 
 
 if __name__ == "__main__":

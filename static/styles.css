@@ -1,4 +1,3 @@
-/*Создание переменных*/
 :root {
     --color1: #4283ae;
     --color2: #333750;
@@ -9,13 +8,13 @@ header, footer {
     background: url(/static/content/bg.png) center center no-repeat;
     background-color: var(--color3);
 }
+section {
+    padding: 10px 0;
+}
 .background {
     background: url(/static/content/bg1.jpg) center center no-repeat;
     background-color: var(--color3);
     background-size: cover;
-}
-section {
-    padding: 10px 0;
 }
 pp001-about1 {
     display: flex;
