@@ -70,6 +70,10 @@
 	<priority>1</priority>
 </url>
 <url>
+	<loc>https://eg-expert.ru/services/ktp</loc>
+	<priority>1</priority>
+</url>
+<url>
 	<loc>https://eg-expert.ru/services/reactor</loc>
 	<priority>1</priority>
 </url>
@@ -99,6 +103,14 @@
 </url>
 <url>
 	<loc>https://eg-expert.ru/services/cable</loc>
+	<priority>1</priority>
+</url>
+<url>
+	<loc>https://eg-expert.ru/services/cable_coupling</loc>
+	<priority>1</priority>
+</url>
+<url>
+	<loc>https://eg-expert.ru/services/cable_lines</loc>
 	<priority>1</priority>
 </url>
 <url>

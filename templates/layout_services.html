@@ -40,7 +40,7 @@
   <link rel="icon" href="../favicon.ico" type="image/x-icon">
 
   <title>{{title}}</title>
-  <meta name="description" content="{{description}}"/>
+  <meta name="description" content="{{description}}" />
 </head>
 
 
@@ -60,25 +60,29 @@
       <div class="col-12 text-end">
 
         <div class="col d-flex text-end justify-content-end align-items-center mb-2">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="me-1 bi bi-envelope-fill color1" viewBox="0 0 16 16">
-            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+            class="me-1 bi bi-envelope-fill color1" viewBox="0 0 16 16">
+            <path
+              d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
           </svg>
-            <h6 class="mb-1"><a href="mailto:expert@eg59.ru" class="text-white">expert@eg59.ru</a></h6>
+          <h6 class="mb-1"><a href="mailto:expert@eg59.ru" class="text-white">expert@eg59.ru</a></h6>
         </div>
-  
+
         <div class="col d-flex text-end justify-content-end align-items-center mb-2">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="me-1 bi bi-telephone-fill color1" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+            class="me-1 bi bi-telephone-fill color1" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
           </svg>
           <h6 class="text-white mb-1">+7(342) 200-85-05</h6><br>
         </div>
-  
+
         <div class="col d-flex text-end justify-content-end align-items-center mb-2">
           <i class="bi bi-phone-fill" style="font-size: 150%; color: #4283ae;"></i>
           <h6 class="text-white mb-1">+7 963 882 0233</h6>
         </div>
 
-        <p class="mb-0 h9 text-white mb-2">Группа компаний <a class="link-info" href="https://eg59.ru/">"ЭНЕРГО
+        <p class="mb-0 h9 text-white mb-2">Группа компаний <a class="link-info" target="_blank" href="https://eg59.ru/">"ЭНЕРГО
             group"</a></p>
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#form1">Оставить
           заявку</button>
@@ -86,14 +90,12 @@
     </div>
   </div>
 
-
-  <!-- Модальное окно -->
   <div class="modal fade" id="form1" tabindex="-1" aria-labelledby="form1Modal" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content bgg1 text-white">
         <div class="modal-header">
           <h5 class="modal-title" id="form1Modal">Оставьте заявку на экспертизу и мы с вами свяжемся</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Закрыть"></button>
         </div>
         <div class="modal-body">
           <div class="container">
@@ -101,37 +103,36 @@
               <div class="col-12">
                 <form action="/email" method="post">
                   <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Имя контактного лица</label>
-                    <input type="phone" name="name" class="form-control" id="exampleInputEmail1"
-                      aria-describedby="emailHelp" placeholder="Имя">
+                    <label for="InputName2" class="form-label">Имя контактного лица</label>
+                    <input type="text" name="name" class="form-control" id="InputName2" placeholder="Имя">
                   </div>
 
                   <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Номер телефона</label>
-                    <input type="text" name="phone" class="form-control" id="exampleInputEmail1"
-                      aria-describedby="emailHelp" placeholder="Телефон с кодом города*">
+                    <label for="InputPhone2" class="form-label">Номер телефона</label>
+                    <input type="text" name="phone" class="form-control" id="InputPhone2" placeholder="Телефон с кодом города">
                   </div>
 
                   <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Адрес электронной почты</label>
-                    <input type="text" name="email" class="form-control" id="exampleInputEmail1"
-                      aria-describedby="emailHelp" placeholder="example@email.ru*">
+                    <label for="InputEmail2" class="form-label">Адрес электронной почты</label>
+                    <input type="email" name="email" class="form-control" id="InputEmail2" placeholder="example@email.ru">
                   </div>
 
                   <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Обращение</label>
-                    <textarea class="form-control" name="text" id="exampleFormControlTextarea1" rows="3"
+                    <label for="InputTextarea2" class="form-label">Обращение</label>
+                    <textarea class="form-control" name="text" id="InputTextarea2" rows="3"
                       placeholder="Текст заявки"></textarea>
                   </div>
 
                   <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="checkboxServices" name="checkbox"
-                      onchange="document.getElementById('submitServices').disabled = !this.checked;">
-                    <label class="form-check-label small" for="checkboxServices">Я даю согласие на обработку своих персональных
-                        данных, и согласен с <a href="/privacy" target="_blank" class="link-warning">Политикой конфиденциальности</a></label>
+                    <input type="checkbox" class="form-check-input" id="checkboxServices" name="checkbox" checked required>
+                    <label class="form-check-label small" for="checkboxServices">Я даю согласие на обработку своих
+                      персональных
+                      данных, и согласен с <a href="/privacy" target="_blank" class="link-warning">Политикой
+                        конфиденциальности</a></label>
                   </div>
 
-                  <button type="submit" disabled="disabled" name="submit" id="submitServices" class="btn btn-primary">Отправить</button>
+                  <button type="submit" name="submit" id="submitServices"
+                    class="btn btn-primary">Отправить</button>
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
                 </form>
               </div>
@@ -140,14 +141,13 @@
         </div>
 
       </div>
-    </div>
+  </div>
 
 </header>
 
 
 <body>
 
-  <!--Сворачивающаяся навигация-->
   <nav class="navbar navbar-expand-md navbar-dark bgg1">
     <div class="container-fluid">
       <a href="/"><img src="../static/content/logo.png" alt="logo.png" style="max-height: 50px" class="img-fluid"></a>
@@ -174,9 +174,17 @@
     </div>
   </nav>
 
-  <section class="background p-5">
+{% for category, msg in get_flashed_messages(True) %}
+  <div class="alert alert-{{category}} alert-dismissible fade show text-center" role="alert">
+  <button type="button" class="btn-close text-end" data-bs-dismiss="alert" aria-label="Close"></button>
+      {{ msg }}
+  </div>
+{% endfor %}
+
+  <section class="{{background}} p-5">
     <div class="container-fluid">
       <div class="row">
+        
         <div class="col-12 text-center">
           <p class="h1 text-white">Выполним независимую <strong class="color1">экспертизу</strong></p><br>
           <strong class="h1 text-white"><ins>{{expertise_name}}</ins></strong>
@@ -190,31 +198,30 @@
               электротехники и энергетике по вашей проблеме</label>
             <div class="line mb-3"></div>
             <div class="mb-3">
-              <label for="InputName" class="form-label">Имя контактного лица</label>
-              <input type="text" name="name" class="form-control" id="InputName" placeholder="Имя">
+              <label for="InputName3" class="form-label">Имя контактного лица</label>
+              <input type="text" name="name" class="form-control" id="InputName3" placeholder="Имя">
             </div>
             <div class="mb-3">
-              <label for="InputPhone" class="form-label">Номер телефона</label>
-              <input type="text" name="phone" class="form-control" id="InputPhone"
-                placeholder="Телефон с кодом города*">
+              <label for="InputPhone3" class="form-label">Номер телефона</label>
+              <input type="text" name="phone" class="form-control" id="InputPhone3"
+                placeholder="Телефон с кодом города">
             </div>
             <div class="mb-3">
-              <label for="InputEmail" class="form-label">Адрес электронной почты</label>
-              <input type="email" name="email" class="form-control" id="InputEmail"
-                placeholder="example@email.ru*">
+              <label for="InputEmail3" class="form-label">Адрес электронной почты</label>
+              <input type="email" name="email" class="form-control" id="InputEmail3" placeholder="example@email.ru">
             </div>
             <div class="mb-3">
-              <label for="InputTextarea" class="form-label">Обращение</label>
-              <textarea class="form-control" name="text" id="InputTextarea" rows="3"
+              <label for="InputTextarea3" class="form-label">Обращение</label>
+              <textarea class="form-control" name="text" id="InputTextarea3" rows="3"
                 placeholder="Текст заявки"></textarea>
             </div>
             <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="checkbox" name="checkbox"
-                onchange="document.getElementById('submit').disabled = !this.checked;">
+              <input type="checkbox" class="form-check-input" id="checkbox" name="checkbox" checked required>
               <label class="form-check-label small" for="checkbox">Я даю согласие на обработку своих персональных
-                  данных, и согласен с <a href="/privacy" target="_blank" class="link-warning">Политикой конфиденциальности</a></label>
+                данных, и согласен с <a href="/privacy" target="_blank" class="link-warning">Политикой
+                  конфиденциальности</a></label>
             </div>
-            <input type="submit" disabled="disabled" name="submit" id="submit" class="btn btn-primary">
+            <input type="submit" name="submit" id="submit" class="btn btn-primary">
           </form>
         </div>
 
@@ -257,7 +264,8 @@
         <div class="col-md-4 col-sm-12 d-flex justify-content-center mb-3">
           <div class="card border-4 rounded">
             <div class="card-body bg2 d-flex align-items-center justify-content-center">
-              <p class="card-text text-white h2">Проверим объем и качество выполненных работ по монтажу, пусконаладки или
+              <p class="card-text text-white h2">Проверим объем и качество выполненных работ по монтажу, пусконаладки
+                или
                 ремонту оборудования</p>
             </div>
           </div>
@@ -274,7 +282,8 @@
         <div class="col-md-4 col-sm-12 d-flex justify-content-center mb-3">
           <div class="card border-4 rounded">
             <div class="card-body bg2 d-flex align-items-center justify-content-center">
-              <p class="card-text text-white h2">Проверим соответствие продукции нормативно-технической документации ГОСТ,
+              <p class="card-text text-white h2">Проверим соответствие продукции нормативно-технической документации
+                ГОСТ,
                 ПУЭ, ПТЭЭП</p>
             </div>
           </div>
@@ -305,7 +314,8 @@
           <div class="accordion" id="accordion">
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
                   Несудебная Экспертиза
                 </button>
               </h2>
@@ -421,15 +431,15 @@
             <div class="mb-3">
               <label for="InputPhoneFooter" class="form-label">Номер телефона</label>
               <input type="text" name="phone" class="form-control" id="InputPhoneFooter"
-                placeholder="Телефон с кодом города*">
+                placeholder="Телефон с кодом города">
             </div>
             <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="checkboxFooter" name="checkbox"
-                onchange="document.getElementById('submitFooter').disabled = !this.checked;">
+              <input type="checkbox" class="form-check-input" id="checkboxFooter" name="checkbox" checked required>
               <label class="form-check-label small" for="checkboxFooter">Я даю согласие на обработку своих персональных
-                  данных, и согласен с <a href="/privacy" target="_blank" class="link-warning">Политикой конфиденциальности</a></label>
+                данных, и согласен с <a href="/privacy" target="_blank" class="link-warning">Политикой
+                  конфиденциальности</a></label>
             </div>
-            <input type="submit" disabled="disabled" name="submit" id="submitFooter" class="btn btn-primary">
+            <input type="submit" name="submit" id="submitFooter" class="btn btn-primary">
           </form>
         </div>
 

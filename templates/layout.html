@@ -5,20 +5,24 @@
 <head>
 
   <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-  m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+  <script type="text/javascript">
+    (function (m, e, t, r, i, k, a) {
+      m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+      m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+    })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-  ym(88245762, "init", {
-       clickmap:true,
-       trackLinks:true,
-       accurateTrackBounce:true,
-       webvisor:true
-  });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/88245762" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+    ym(88245762, "init", {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true
+    });
+  </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/88245762" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
 
   <link href="static/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -26,9 +30,11 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
 
+  <script src="static/script.js"></script>
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
   <link href="static/styles.css" rel="stylesheet">
-  
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,54 +42,62 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 
   <title>{{title}}</title>
-  <meta name="description" content="{{description}}"/>
+  <meta name="description" content="{{description}}" />
 </head>
 
 
 <header>
   <div class="container-fluid">
     <div class="row">
-       <div class="col-md-6 col-sm-12 mb-3 align-self-start">
-        <a class="link_without_underline text-decoration-none" href="/"><h1 class="text-white m-0">ЭНЕРГО group</h1></a>
-        <a class="link_without_underline text-decoration-none" href="/"><h4 class="text-white m-0">ЭКСПЕРТИЗА</h4></a>
+      <div class="col-md-6 col-sm-12 mb-3 align-self-start">
+        <a class="link_without_underline text-decoration-none" href="/">
+          <h1 class="text-white m-0">ЭНЕРГО group</h1>
+        </a>
+        <a class="link_without_underline text-decoration-none" href="/">
+          <h4 class="text-white m-0">ЭКСПЕРТИЗА</h4>
+        </a>
         <div class="line"></div>
       </div>
 
       <div class="col-12 text-end">
 
-      <div class="col d-flex text-end justify-content-end align-items-center mb-2">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="me-1 bi bi-envelope-fill color1" viewBox="0 0 16 16">
-          <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
-        </svg>
+        <div class="col d-flex text-end justify-content-end align-items-center mb-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+            class="me-1 bi bi-envelope-fill color1" viewBox="0 0 16 16">
+            <path
+              d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+          </svg>
           <h6 class="mb-1"><a href="mailto:expert@eg59.ru" class="text-white">expert@eg59.ru</a></h6>
-      </div>
+        </div>
 
-      <div class="col d-flex text-end justify-content-end align-items-center mb-2">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="me-1 bi bi-telephone-fill color1" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-        </svg>
-        <h6 class="text-white mb-1">+7(342) 200-85-05</h6><br>
-      </div>
+        <div class="col d-flex text-end justify-content-end align-items-center mb-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+            class="me-1 bi bi-telephone-fill color1" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+          </svg>
+          <h6 class="text-white mb-1">+7(342) 200-85-05</h6><br>
+        </div>
 
-      <div class="col d-flex text-end justify-content-end align-items-center mb-2">
-        <i class="bi bi-phone-fill" style="font-size: 150%; color: #4283ae;"></i>
-        <h6 class="text-white mb-1">+7 963 882 0233</h6>
-      </div>
+        <div class="col d-flex text-end justify-content-end align-items-center mb-2">
+          <i class="bi bi-phone-fill" style="font-size: 150%; color: #4283ae;"></i>
+          <h6 class="text-white mb-1">+7 963 882 0233</h6>
+        </div>
 
-        <p class="mb-0 h9 text-white mb-2">Группа компаний <a class="link-info" href="https://eg59.ru/">"ЭНЕРГО group"</a></p>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#form1">Оставить заявку</button>
+        <p class="mb-0 h9 text-white mb-2">Группа компаний <a class="link-info" target="_blank" href="https://eg59.ru/">"ЭНЕРГО
+            group"</a></p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#form1">Оставить
+          заявку</button>
       </div>
     </div>
   </div>
 
-
-  <!-- Модальное окно -->
   <div class="modal fade" id="form1" tabindex="-1" aria-labelledby="form1Modal" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content bgg1 text-white">
         <div class="modal-header">
           <h5 class="modal-title" id="form1Modal">Оставьте заявку на экспертизу и мы с вами свяжемся</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Закрыть"></button>
         </div>
         <div class="modal-body">
           <div class="container">
@@ -91,51 +105,48 @@
               <div class="col-12">
                 <form action="/email" method="post">
                   <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Имя контактного лица</label>
-                    <input type="phone" name="name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Имя" >
+                    <label for="InputName1" class="form-label">Имя контактного лица</label>
+                    <input type="text" name="name" class="form-control" id="InputName1" placeholder="Имя">
                   </div>
 
                   <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Номер телефона</label>
-                    <input type="text" name="phone" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Телефон с кодом города*" >
+                    <label for="InputPhone1" class="form-label">Номер телефона</label>
+                    <input type="text" name="phone" class="form-control" id="InputPhone1" placeholder="Телефон с кодом города">
                   </div>
 
                   <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Адрес электронной почты</label>
-                    <input type="text" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@email.ru*" >
+                    <label for="InputEmail1" class="form-label">Адрес электронной почты</label>
+                    <input type="email" name="email" class="form-control" id="InputEmail1" placeholder="example@email.ru">
                   </div>
 
                   <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Обращение</label>
-                    <textarea class="form-control" name="text" id="exampleFormControlTextarea1" rows="3" placeholder="Текст заявки"></textarea>
+                    <label for="InputTextarea1" class="form-label">Обращение</label>
+                    <textarea class="form-control" name="text" id="InputTextarea1" rows="3"
+                      placeholder="Текст заявки"></textarea>
                   </div>
 
                   <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="checkboxHeader" name="checkbox"
-                      onchange="document.getElementById('submitHeader').disabled = !this.checked;">
-                    <label class="form-check-label small" for="checkboxHeader">Я даю согласие на обработку своих персональных
-                        данных, и согласен с <a href="/privacy" target="_blank" class="link-warning">Политикой конфиденциальности</a></label>
+                    <input type="checkbox" class="form-check-input" id="checkboxHeader" name="checkbox" checked required>
+                    <label class="form-check-label small" for="checkboxHeader">Я даю согласие на обработку своих
+                      персональных данных, и согласен с <a href="/privacy" target="_blank" class="link-warning">Политикой конфиденциальности</a></label>
                   </div>
 
-                  <button type="submit" disabled="disabled" name="submit" id="submitHeader" class="btn btn-primary">Отправить</button>
+                  <button type="submit" name="submit" id="submitHeader"
+                    class="btn btn-primary">Отправить</button>
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
                 </form>
               </div>
             </div>
           </div>
         </div>
-
-    </div>
+      </div>
   </div>
 
 </header>
 
 
-
 <body>
 
-
-<!--Сворачивающаяся навигация-->
   <nav class="navbar navbar-expand-md navbar-dark bgg1">
     <div class="container-fluid">
       <a href="/"><img src="static/content/logo.png" alt="logo.png" style="max-height: 50px" class="img-fluid"></a>
@@ -162,9 +173,12 @@
     </div>
   </nav>
 
-
-
-
+  {% for category, msg in get_flashed_messages(True) %}
+      <div class="alert alert-{{category}} alert-dismissible fade show text-center" role="alert">
+      <button type="button" class="btn-close text-end" data-bs-dismiss="alert" aria-label="Close"></button>
+          {{ msg }}
+      </div>
+  {% endfor %}
 
   {% block body %}{% endblock %}
 
@@ -182,7 +196,7 @@
       ИНН: 5902889059
       КПП:590401001
       ОГРН: 1125902003831
-      
+
       Телефон: +7(342) 200-85-05
       Электронная почта: <a href="mailto:expert@eg59.ru" class="text-white">expert@eg59.ru</a>
     </p>

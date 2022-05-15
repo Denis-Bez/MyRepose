@@ -11,26 +11,11 @@ header, footer {
 section {
     padding: 10px 0;
 }
-.background {
-    background: url(/static/content/bg1.jpg) center center no-repeat;
-    background-color: var(--color3);
-    background-size: cover;
+.full-height {
+    min-height: 100vh;
 }
-pp001-about1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .link_without_underline {
     text-decoration: none;
-}
-.card {
-    border-color: var(--color1)!important;
-    width: 20rem;
-}
-.card .btn {
-    border-radius: 0;
 }
 .line {
     width: 200px;
@@ -71,11 +56,6 @@ pp001-about1 {
 .bg2 {
     background-color: var(--color2);
 }
-.pp001-bgcard1 {
-    background: url(/static/content/services.png) center center no-repeat;
-    background-color:rgba(0,0,0,.3);
-    
-}
 .bgg2 {
 background: var(--color1);
 background: -moz-linear-gradient(left, var(--color1) 0%, #207cca 50%, #2989d8 50%, #207cca 50%, var(--color2) 100%);
@@ -93,4 +73,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=var(--color2),
 background-size: contain;
 }
 
+/*  Expertises background  */
+.background-default {
+    background: url(/static/content/background-default.jpg) center center no-repeat;
+    background-color: var(--color3);
+    background-size: cover;
+}
+.background-block2 {
+    background: url(/static/content/background-block2.jpg) center center no-repeat;
+    background-color: var(--color3);
+    background-size: cover;
+}
+.background-block3 {
+    background: url(/static/content/background-block3.jpg) center center no-repeat;
+    background-color: var(--color3);
+    background-size: cover;
+}
+.background-block4 {
+    background: url(/static/content/background-block4.jpg) center center no-repeat;
+    background-color: var(--color3);
+    background-size: cover;
+}
+.background-block5 {
+    background: url(/static/content/background-block5.jpg) center center no-repeat;
+    background-color: var(--color3);
+    background-size: cover;
+}
 
