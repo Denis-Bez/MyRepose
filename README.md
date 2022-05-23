@@ -11,7 +11,7 @@ The project was developed in Visual Studio Code at [my own repository](https://g
 **Files in the project:** 
  - "app.py": a backend part of the site. It contains Mail and flask configurations, rendering templates, spam filter, sending mail function
  - "text_library.py": the library has text for lyouts namely -  "title", "descripton" tags text, text for are selling services pages and conditions the spam filter
- - folder "templates": 36 pages, 2 layouts and the file "sitemap.xml". The Site has 4 section - "About company", "Services" with 30 product' pages, "Ours experts" and "Contacts". The contact' forms are in header and in services pages
+ - folder "templates": 36 pages, 2 layouts and the file "sitemap.xml". The Site has 4 sections - "About company", "Services" with 30 product' pages, "Ours experts" and "Contacts". The contact' forms are in header and in services pages
  - folder "static": contain bootstrap files, custom CSS styles file
 
 **Features which have been Implemented:**

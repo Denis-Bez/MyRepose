@@ -53,11 +53,24 @@ def email():
         msg_client = Message("Заявка успешно отправлена", recipients=[email])
         msg_client.body = (f"Мы получили заявку на экспертизу. Свяжемся с вами в ближайшее время для уточнения информации")
 
-        for spam_name in spam_filter["name"]:
-            if re.search(spam_name, name):
-                flash("Заявка распознана системой как спам! Попробуйте написать нам на почту expert@eg59.ru или позвонить по телефону +7 963 882 0233", category="danger")
-                return redirect ("/")
+        # Spam filter
+        try:
+            for spam_name in spam_filter["name"]:
+                if re.search(spam_name, name):
+                    flash("Заявка распознана системой как спам! Попробуйте написать нам на почту expert@eg59.ru или позвонить по телефону +7 963 882 0233", category="danger")
+                    return redirect ("/")
+        except:
+            print("name: 'None'")
 
+        try:
+            for spam_text in spam_filter["text"]:
+                if re.search(spam_text, text):
+                    flash("Заявка распознана системой как спам! Попробуйте написать нам на почту expert@eg59.ru или позвонить по телефону +7 963 882 0233", category="danger")
+                    return redirect ("/")
+        except:
+            print("text: 'None'")
+
+        # Sending mail
         try:
             mail.send(msg_client)
             status = "Подтверждение на почту отправлено"
