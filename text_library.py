@@ -112,8 +112,8 @@ description = {
 
 # Спам фильтр при отправке заявок
 spam_filter = {
-    "name": ["HenryBeide", "Mike Watson", "Mike Holmes", "Julius Sello Malema"],
+    "name": ["HenryBeide", "Mike Watson", "Mike Holmes", "Julius Sello Malema", "Mike Benson"],
     "phone": [],
     "email": [],
-    "text": ["ОЗОН.ру", "Wildberries.ру", "Julius Sello Malema"]
+    "text": ["ОЗОН.ру", "Wildberries.ру"]
 }
