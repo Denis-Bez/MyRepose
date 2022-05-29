@@ -47,9 +47,11 @@
 
 
 <header>
-  <div class="container-fluid">
+
+
+  <div class="container-fluid my-3">
     <div class="row">
-      <div class="col-md-6 col-sm-12 mb-3 align-self-start">
+      <div class="col-sm-12 mb-3 col-md-6 align-self-start">
         <a class="link_without_underline text-decoration-none" href="/">
           <h1 class="text-white m-0">ЭНЕРГО group</h1>
         </a>
@@ -57,40 +59,22 @@
           <h4 class="text-white m-0">ЭКСПЕРТИЗА</h4>
         </a>
         <div class="line"></div>
+        <p class="mb-0 h9 text-white text-muted">Группа компаний <a class="link-info text-muted" target="_blank"
+          href="https://eg59.ru/">"ЭНЕРГО
+          group"</a></p>
       </div>
 
-      <div class="col-12 text-end">
-
-        <div class="col d-flex text-end justify-content-end align-items-center mb-2">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-            class="me-1 bi bi-envelope-fill color1" viewBox="0 0 16 16">
-            <path
-              d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
-          </svg>
-          <h6 class="mb-1"><a href="mailto:expert@eg59.ru" class="text-white">expert@eg59.ru</a></h6>
-        </div>
-
-        <div class="col d-flex text-end justify-content-end align-items-center mb-2">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-            class="me-1 bi bi-telephone-fill color1" viewBox="0 0 16 16">
-            <path fill-rule="evenodd"
-              d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-          </svg>
-          <h6 class="text-white mb-1">+7(342) 200-85-05</h6><br>
-        </div>
-
-        <div class="col d-flex text-end justify-content-end align-items-center mb-2">
-          <i class="bi bi-phone-fill" style="font-size: 150%; color: #4283ae;"></i>
-          <h6 class="text-white mb-1">+7 912-88-97-709</h6>
-        </div>
-
-        <p class="mb-0 h9 text-white mb-2">Группа компаний <a class="link-info" target="_blank" href="https://eg59.ru/">"ЭНЕРГО
-            group"</a></p>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#form1">Оставить
-          заявку</button>
+      <div class="col-sm-12 mb-3 col-md-6 text-end">
+        <h6 class="mb-1"><a href="mailto:expert@eg59.ru" class="text-white">expert@eg59.ru</a></h6>
+        <h6 class="text-white mb-1">+7 (342) 200-85-05</h6>
+        <h6 class="text-white mb-3">+7 912-88-97-709</h6>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#form1">Оставить заявку</button>
       </div>
+
+    
     </div>
   </div>
+
 
   <div class="modal fade" id="form1" tabindex="-1" aria-labelledby="form1Modal" aria-hidden="true">
     <div class="modal-dialog">
@@ -111,12 +95,14 @@
 
                   <div class="mb-3">
                     <label for="InputPhone1" class="form-label">Номер телефона</label>
-                    <input type="text" name="phone" class="form-control" id="InputPhone1" placeholder="Телефон с кодом города">
+                    <input type="text" name="phone" class="form-control" id="InputPhone1"
+                      placeholder="Телефон с кодом города">
                   </div>
 
                   <div class="mb-3">
                     <label for="InputEmail1" class="form-label">Адрес электронной почты</label>
-                    <input type="email" name="email" class="form-control" id="InputEmail1" placeholder="example@email.ru">
+                    <input type="email" name="email" class="form-control" id="InputEmail1"
+                      placeholder="example@email.ru">
                   </div>
 
                   <div class="mb-3">
@@ -126,13 +112,14 @@
                   </div>
 
                   <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="checkboxHeader" name="checkbox" checked required>
+                    <input type="checkbox" class="form-check-input" id="checkboxHeader" name="checkbox" checked
+                      required>
                     <label class="form-check-label small" for="checkboxHeader">Я даю согласие на обработку своих
-                      персональных данных, и согласен с <a href="/privacy" target="_blank" class="link-warning">Политикой конфиденциальности</a></label>
+                      персональных данных, и согласен с <a href="/privacy" target="_blank"
+                        class="link-warning">Политикой конфиденциальности</a></label>
                   </div>
 
-                  <button type="submit" name="submit" id="submitHeader"
-                    class="btn btn-primary">Отправить</button>
+                  <button type="submit" name="submit" id="submitHeader" class="btn btn-primary">Отправить</button>
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
                 </form>
               </div>
@@ -140,7 +127,7 @@
           </div>
         </div>
       </div>
-  </div>
+    </div>
 
 </header>
 
@@ -174,10 +161,10 @@
   </nav>
 
   {% for category, msg in get_flashed_messages(True) %}
-      <div class="alert alert-{{category}} alert-dismissible fade show text-center" role="alert">
-      <button type="button" class="btn-close text-end" data-bs-dismiss="alert" aria-label="Close"></button>
-          {{ msg }}
-      </div>
+  <div class="alert alert-{{category}} alert-dismissible fade show text-center" role="alert">
+    <button type="button" class="btn-close text-end" data-bs-dismiss="alert" aria-label="Close"></button>
+    {{ msg }}
+  </div>
   {% endfor %}
 
   {% block body %}{% endblock %}

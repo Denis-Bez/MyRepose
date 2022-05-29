@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+
+
+    <link href="../static/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="../static/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <script src="../static/script.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href="../static/styles.css" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    
+
+</head>
+
+
+<header>
+
+
+    <div class="container-fluid my-3">
+        <div class="row">
+            <div class="col-sm-12 mb-3 col-md-6 align-self-start">
+                <a class="link_without_underline text-decoration-none" href="/">
+                    <h1 class="text-white m-0">ЭНЕРГО group</h1>
+                </a>
+                <a class="link_without_underline text-decoration-none" href="/">
+                    <h4 class="text-white m-0">ЭКСПЕРТИЗА</h4>
+                </a>
+                <div class="line"></div>
+                <p class="mb-0 h9 text-white text-muted">Группа компаний <a class="link-info text-muted" target="_blank"
+                        href="https://eg59.ru/">"ЭНЕРГО
+                        group"</a></p>
+            </div>
+
+            <div class="col-sm-12 mb-3 col-md-6 text-end">
+                <h6 class="mb-1"><a href="mailto:expert@eg59.ru" class="text-white">expert@eg59.ru</a></h6>
+                <h6 class="text-white mb-1">+7 (342) 200-85-05</h6>
+                <h6 class="text-white mb-3">+7 912-88-97-709</h6>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#form1">Оставить
+                    заявку</button>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="form1" tabindex="-1" aria-labelledby="form1Modal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content bgg1 text-white">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="form1Modal">Оставьте заявку на экспертизу и мы с вами свяжемся</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <form action="/email" method="post">
+                                    <div class="mb-3">
+                                        <label for="InputName1" class="form-label">Имя контактного лица</label>
+                                        <input type="text" name="name" class="form-control" id="InputName1"
+                                            placeholder="Имя">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="InputPhone1" class="form-label">Номер телефона</label>
+                                        <input type="text" name="phone" class="form-control" id="InputPhone1"
+                                            placeholder="Телефон с кодом города">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="InputEmail1" class="form-label">Адрес электронной почты</label>
+                                        <input type="email" name="email" class="form-control" id="InputEmail1"
+                                            placeholder="example@email.ru">
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label for="InputTextarea1" class="form-label">Обращение</label>
+                                        <textarea class="form-control" name="text" id="InputTextarea1" rows="3"
+                                            placeholder="Текст заявки"></textarea>
+                                    </div>
+
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="checkboxHeader"
+                                            name="checkbox" checked required>
+                                        <label class="form-check-label small" for="checkboxHeader">Я даю согласие на
+                                            обработку своих
+                                            персональных данных, и согласен с <a href="/privacy" target="_blank"
+                                                class="link-warning">Политикой конфиденциальности</a></label>
+                                    </div>
+
+                                    <button type="submit" name="submit" id="submitHeader"
+                                        class="btn btn-primary">Отправить</button>
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Закрыть</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</header>
+
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bgg1">
+        <div class="container-fluid">
+            <a href="/"><img src="../static/content/logo.png" alt="logo.png" style="max-height: 50px"
+                    class="img-fluid"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse show" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" aria-current="page" href="/">О компании</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" aria-current="page" href="/services">Виды экспертиз</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" aria-current="page" href="/experts">Наши эксперты</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" aria-current="page" href="/contacts">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="full-height">
+        <div class="container mt-4">
+            <p class="h2 color2">Компания Энерго group выполняет широкий спектр судебных и досудебных экспертиз
+                элетротехнического оборудования и электротехнических работ по всей России</p>
+            <div class="line mb-4 mt-2"></div>
+            <div class="row mr-0 align-items-center">
+                <div class="col-lg-7 col-sm-12 mt-sm-3 mb-sm-3">
+                    <img src="../static/content/first.jpg" alt="..." class="img-fluid img-thumbnail">
+                </div>        
+            
+
+
+                <div class="col-lg-5 col-sm-12">
+                   
+                        <div class="row">
+                            <!-- <div class="col d-flex align-items-center mb-3"> -->
+                                <div class="col d-flex align-items-center justify-content-end">
+                                <i class="bi bi-clipboard-check-fill" style="font-size: 500%; color: #333750;"></i>
+                                </div>
+                               <!--  <div> -->
+                                <div class="col text-start">
+                                    <h4 class="fw-bold mb-0">Экспертиза</h4>
+                                    <p class="h3 color1">Электромонтажных и пусконаладочных работ до 500 кВ</p>
+                                </div>
+                               <!--  </div> -->
+                            <!-- </div> -->
+                        </div>
+
+<!--                             <div class="row-cols-1">
+                                <div class="col d-flex align-items-center mb-3">
+                                    <i class="bi bi-clipboard-check-fill" style="font-size: 500%; color: #333750;"></i>
+                                    <div>
+                                        <h4 class="fw-bold mb-0">Экспертиза</h4>
+                                        <p class="h3 color1">Промышленного электротехнического оборудования до 500 кВ
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row-cols-1">
+                                <div class="col d-flex align-items-center mb-3">
+                                    <i class="bi bi-clipboard-check-fill" style="font-size: 500%; color: #333750;"></i>
+                                    <div>
+                                        <h4 class="fw-bold mb-0">Экспертиза</h4>
+                                        <p class="h3 color1">Трансформаторных подстанций</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row-cols-1">
+                                <div class="col d-flex align-items-center mb-3">
+                                    <i class="bi bi-clipboard-check-fill" style="font-size: 500%; color: #333750;"></i>
+                                    <div>
+                                        <h4 class="fw-bold mb-0">Экспертиза</h4>
+                                        <p class="h3 color1">Кабельной продукции</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row row-cols-1">
+                                <div class="col d-flex align-items-center mb-3">
+                                    <i class="bi bi-clipboard-check-fill" style="font-size: 500%; color: #333750;"></i>
+                                    <div>
+                                        <h4 class="fw-bold mb-0">Экспертиза</h4>
+                                        <p class="h3 color1">Оборудования РЗиА</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                   
+                </div>
+            
+            
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+<footer class="text-muted">
+    <div class="container">
+        <p class="float-right mb-1">
+            <a href="#">Наверх</a>
+        </p>
+        <p class="mb-1">
+            &#169 Общество с ограниченной ответственностью «ЭНЕРГОгрупп»
+
+            Свидетельство о внесении в ЕГРЮЛ: 59 № 004360320 от 01.06.2012
+            ИНН: 5902889059
+            КПП:590401001
+            ОГРН: 1125902003831
+
+            Телефон: +7(342) 200-85-05
+            Электронная почта: <a href="mailto:expert@eg59.ru" class="text-white">expert@eg59.ru</a>
+        </p>
+
+        <p class="mb-0">Группа компаний <a href="https://eg59.ru/">"ЭНЕРГО group"</a></p>
+        <p class="mb-0 text-muted small"><a href="/privacy" target="_blank">Политика конфиденциальности</a></p>
+    </div>
+</footer>
+
+</html>
