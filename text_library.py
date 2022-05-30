@@ -1,3 +1,9 @@
+# Автоматический рендеринг страниц
+pages = {
+    "cabling": "cabling",
+    "inst_couplings": "inst_couplings",
+}
+
 # Текст для метатега title
 title = {
     "index": "ЭНЕРГО group Экспертиза - Энергия в руках профессионалов. Энергогрупп",

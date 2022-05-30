@@ -2,5 +2,5 @@ User-agent: *
 Allow: /
 Disallow: /email
 Disallow: /privacy
-Sitemap:https://eg-expert.ru/sitemap.xml
+Sitemap: https://eg-expert.ru/sitemap.xml
 Host: https://eg-expert.ru

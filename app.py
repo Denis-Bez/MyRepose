@@ -1,6 +1,6 @@
 import re
 
-from text_library import title, expertise_name, description, spam_filter
+from text_library import title, expertise_name, description, spam_filter, pages
 
 from config import CONFIG
 from flask import Flask, render_template, redirect, flash, request
@@ -105,9 +105,21 @@ def yandex_verification():
 
 
 
-# All exprertises pages
+# All exprertises pages. Нужна ли защита от атаки 'внедрения'. Можно защитить приведя <name> к типу route (читать в документации Flask)
 # Block "ЭКСПЕРТИЗА ЭЛЕКТРОМОНТАЖНЫХ И ПУСКОНАЛАДОЧНЫХ РАБОТ ДО 500 КВ"
-@application.route("/services/cabling")
+
+# Все экспертизы затащить сюда
+@application.route('/services/<name>')
+def many_pages(name):
+    try:
+        page = pages[name]
+        return render_template('/services/' + page + '.html', 
+            expertise_name=expertise_name[page], title=title[page], description=description[page], 
+            background="background-default")
+    except:
+        return render_template('404.html')
+
+""" @application.route("/services/cabling")
 def cabling():
     return render_template("/services/cabling.html", 
     expertise_name=expertise_name["cabling"], title=title["cabling"], description=description["cabling"], background="background-default")
@@ -115,7 +127,7 @@ def cabling():
 @application.route("/services/inst_couplings")
 def inst_couplings():
     return render_template("/services/inst_couplings.html", 
-    expertise_name=expertise_name["inst_couplings"], title=title["inst_couplings"], description=description["inst_couplings"], background="background-default")
+    expertise_name=expertise_name["inst_couplings"], title=title["inst_couplings"], description=description["inst_couplings"], background="background-default") """
 
 @application.route("/services/inst_cablestruct")
 def inst_cablestruct():
