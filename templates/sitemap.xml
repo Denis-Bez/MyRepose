@@ -18,27 +18,27 @@
 	<priority>0.8</priority>
 </url>
 <url>
-	<loc>https://eg-expert.ru/services/cabling</loc>
+	<loc>https://eg-expert.ru/services/electric_work</loc>
 	<priority>1</priority>
 </url>
 <url>
-	<loc>https://eg-expert.ru/services/inst_couplings</loc>
+	<loc>https://eg-expert.ru/services/launch_work</loc>
 	<priority>1</priority>
 </url>
 <url>
-	<loc>https://eg-expert.ru/services/inst_cablestruct</loc>
+	<loc>https://eg-expert.ru/services/equip_condit</loc>
 	<priority>1</priority>
 </url>
 <url>
-	<loc>https://eg-expert.ru/services/lighting</loc>
+	<loc>https://eg-expert.ru/services/review</loc>
 	<priority>1</priority>
 </url>
 <url>
-	<loc>https://eg-expert.ru/services/inst_switchgears</loc>
+	<loc>https://eg-expert.ru/services/purpose</loc>
 	<priority>1</priority>
 </url>
 <url>
-	<loc>https://eg-expert.ru/services/inst_ground_loop</loc>
+	<loc>https://eg-expert.ru/services/accidents</loc>
 	<priority>1</priority>
 </url>
 <url>
@@ -58,11 +58,19 @@
 	<priority>1</priority>
 </url>
 <url>
-	<loc>https://eg-expert.ru/services/system_generator</loc>
+	<loc>https://eg-expert.ru/services/lighting</loc>
 	<priority>1</priority>
 </url>
 <url>
 	<loc>https://eg-expert.ru/services/conductor</loc>
+	<priority>1</priority>
+</url>
+<url>
+	<loc>https://eg-expert.ru/services/ground_loop</loc>
+	<priority>1</priority>
+</url>
+<url>
+	<loc>https://eg-expert.ru/services/switchboard</loc>
 	<priority>1</priority>
 </url>
 <url>
@@ -75,10 +83,6 @@
 </url>
 <url>
 	<loc>https://eg-expert.ru/services/reactor</loc>
-	<priority>1</priority>
-</url>
-<url>
-	<loc>https://eg-expert.ru/services/construction_switch</loc>
 	<priority>1</priority>
 </url>
 <url>
@@ -111,6 +115,10 @@
 </url>
 <url>
 	<loc>https://eg-expert.ru/services/cable_lines</loc>
+	<priority>1</priority>
+</url>
+<url>
+	<loc>https://eg-expert.ru/services/cable_airlines</loc>
 	<priority>1</priority>
 </url>
 <url>

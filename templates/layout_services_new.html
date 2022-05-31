@@ -1,0 +1,268 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+
+<section class="{{background}} p-5">
+    <div class="container-fluid">
+      <div class="row">
+        
+        <div class="col-12 text-center">
+          <p class="h1 text-white">Выполним независимую <strong class="color1">экспертизу</strong></p><br>
+          <strong class="h1 text-white"><ins>{{expertise_name}}</ins></strong>
+        </div>
+      </div>
+      <div class="row pt-5">
+
+        <div class="col-sm-12 col-md-6">
+          <form action="/email" method="post" class="p-3 bgg1 text-white shadow-lg rounded-3">
+            <label class="form-label h3">Получите консультацию у практикующих экспертов в области электротехники по вашей проблеме</label>
+            <div class="line mb-3"></div>
+            <div class="mb-3">
+              <label for="InputName3" class="form-label">Имя контактного лица</label>
+              <input type="text" name="name" class="form-control" id="InputName3" placeholder="Имя">
+            </div>
+            <div class="mb-3">
+              <label for="InputPhone3" class="form-label">Номер телефона</label>
+              <input type="text" name="phone" class="form-control" id="InputPhone3"
+                placeholder="Телефон с кодом города">
+            </div>
+            <div class="mb-3">
+              <label for="InputEmail3" class="form-label">Адрес электронной почты</label>
+              <input type="email" name="email" class="form-control" id="InputEmail3" placeholder="example@email.ru">
+            </div>
+            <div class="mb-3">
+              <label for="InputTextarea3" class="form-label">Обращение</label>
+              <textarea class="form-control" name="text" id="InputTextarea3" rows="3"
+                placeholder="Текст заявки"></textarea>
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="checkbox" name="checkbox" checked required>
+              <label class="form-check-label small" for="checkbox">Принимаю условия «Политики конфиденциальности»</label>
+            </div>
+            <input type="submit" name="submit" id="submit" class="btn btn-primary">
+          </form>
+        </div>
+
+        <div class="col-sm-12 col-md-6 align-self-center">
+          <div class="row">
+             <img src="../static/content/icon/russia_country_icon.svg" alt="..." style="max-height: 200px"
+              class="img-fluid">
+          </div>
+          <div class="row text-center">
+            <p class="h2 text-white">Наши эксперты работают по всей стране</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 pb-3">
+          <p class="h2 m-4">Необходимо провести экспертизу <strong class="color1">{{expertise_name}}</strong>?</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4 col-sm-12 d-flex justify-content-center mb-3">
+          <div class="card border-4 rounded shadow">
+            <div class="card-body bg2 d-flex align-items-center justify-content-center">
+              <p class="card-text text-white h2">Установим истинную причину аварии, дефекта или отказа</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-12 d-flex justify-content-center mb-3">
+          <div class="card border-4 rounded">
+            <div class="card-body bg2 d-flex align-items-center justify-content-center">
+              <p class="card-text text-white h2">Проверим объем и качество выполненных работ по монтажу, пусконаладки
+                или
+                ремонту оборудования</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-12 d-flex justify-content-center mb-3">
+          <div class="card border-4 rounded">
+            <div class="card-body bg2 d-flex align-items-center justify-content-center">
+              <p class="card-text text-white h2">Проверим объект на предмет соблюдения проекта</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-12 d-flex justify-content-center mb-3">
+          <div class="card border-4 rounded">
+            <div class="card-body bg2 d-flex align-items-center justify-content-center">
+              <p class="card-text text-white h2">Проверим соответствие продукции нормативно-технической документации
+                ГОСТ,
+                ТУ, ПУЭ, ПТЭЭП и др.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-12 d-flex justify-content-center mb-3">
+          <div class="card border-4 rounded">
+            <div class="card-body bg2 d-flex align-items-center justify-content-center">
+              <p class="card-text text-white h2">Проверим оборудование на соответсвие паспортным характеристикам</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="bgg2">
+    <div class="container mt-5 mb-5">
+      <div class="row d-flex align-items-center justify-content-center">
+        <p class="h2 text-white text-center pb-3">Выполним весь комплекс работ по экспертизе</p>
+        <div class="col-sm-12 col-md-5">
+          <img src="../static/content/services_docs.jpg" alt="..." class="img-fluid img-thumbnail">
+        </div>
+
+        <div class="col-sm-12 col-md-7">
+          <div class="accordion" id="accordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  Несудебная Экспертиза
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordion">
+                <div class="accordion-body bg1">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item bg1 text-white">На основании имеющихся данных производим первичный анализ
+                      проблемы</li>
+                    <li class="list-group-item bg1 text-white">Оцениваем вероятность на успешное для Вас экспертное
+                      заключение</li>
+                    <li class="list-group-item bg1 text-white">Грамотно сформулируем вопросы, которые помогут в
+                      скорейшем разрешении спора</li>
+                    <li class="list-group-item bg1 text-white">Выезд эксперта на объект и составление акта осмотра</li>
+                    <li class="list-group-item bg1 text-white">Выполнение всех необходимых испытаний и измерений</li>
+                    <li class="list-group-item bg1 text-white">Подготовка и согласование экспертного заключения</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Судебная Экспертиза (N 73-ФЗ от 21.05.2001)
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordion">
+                <div class="accordion-body bg1">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item bg1 text-white">Получение запроса на судебную экспертизу</li>
+                    <li class="list-group-item bg1 text-white">Составляем письмо для ходатайства о назначении судебной
+                      экспертизы. Указываем стоимость, сроки и подтверждаем компетенции экспертов</li>
+                    <li class="list-group-item bg1 text-white">Получение определения суда. Приступаем к выполнению работ
+                      по экспертизе</li>
+                    <li class="list-group-item bg1 text-white">Выезд эксперта на объект и составление акта осмотра</li>
+                    <li class="list-group-item bg1 text-white">Выполнение всех необходимых испытаний и измерений</li>
+                    <li class="list-group-item bg1 text-white">Подготовка и согласование экспертного заключения и
+                      направление его в суд</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Рецензия Экспертного заключения
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordion">
+                <div class="accordion-body bg1">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item bg1 text-white">Получение заявки на рецензирование экспертного заключения
+                    </li>
+                    <li class="list-group-item bg1 text-white">Консультируем по выявленным недостаткам и
+                      целесообразности подготовки рецензии</li>
+                    <li class="list-group-item bg1 text-white">Исследование экспертного заключения</li>
+                    <li class="list-group-item bg1 text-white">Подготовка и согласование рецензии</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-6 col-sm-12 p-4 align-self-center h3">
+          <h2 class="color1"><strong>НАШИ ПРЕИМУЩЕСТВА</strong></h4>
+            <ul>
+              <li class="mb-3">Штатные эксперты</li>
+              <li class="mb-3">Инженерно-технический персонал</li>
+              <li class="mb-3">Сметный отдел</li>
+              <li class="mb-3">Свой приборный парк</li>
+              <li class="mb-3">Своя электролаборатория до 500 кВ</li>
+              <li class="mb-3">Своя лаборатория неразрушающего контроля</li>
+              <li class="mb-3">Своя аттестация технологии сварки и аттестованные специалисты НАКС</li>
+            </ul>
+
+        </div>
+
+        <div class="col-lg-6 col-sm-12 mt-sm-5 mb-sm-5 text-center">
+          <img src="../static/content/services_new15.jpg" alt="..." class="img-fluid img-thumbnail">
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="bgg1">
+    <div class="container-fluid pb-5">
+      <div class="row pt-5 d-flex align-items-center justify-content-center">
+
+        <div class="col-10">
+          <form action="/email" method="post" class="p-3 text-white rounded-3">
+            <label class="form-label h3">Закажите обратный звонок</label>
+            <div class="line mb-3"></div>
+            <div class="mb-3">
+              <label for="InputNameFooter" class="form-label">Имя контактного лица</label>
+              <input type="text" name="name" class="form-control" id="InputNameFooter" placeholder="Имя">
+            </div>
+            <div class="mb-3">
+              <label for="InputPhoneFooter" class="form-label">Номер телефона</label>
+              <input type="text" name="phone" class="form-control" id="InputPhoneFooter"
+                placeholder="Телефон с кодом города">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="checkboxFooter" name="checkbox" checked required>
+              <label class="form-check-label small" for="checkboxFooter">Принимаю условия «Политики конфиденциальности»</label>
+            </div>
+            <input type="submit" name="submit" id="submitFooter" class="btn btn-primary">
+          </form>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+{% endblock %}
