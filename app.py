@@ -111,7 +111,6 @@ def yandex_verification():
 def many_pages(name):
     try:
         page = pages[name]
-        print(page)
         return render_template('/services/' + page + '.html', 
             expertise_name=expertise_name[page], title=title[page], description=description[page], 
             background=background[page])
