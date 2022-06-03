@@ -115,7 +115,7 @@ def many_pages(name):
             expertise_name=expertise_name[page], title=title[page], description=description[page], 
             background=background[page])
     except:
-        return render_template('404.html')
+        return render_template('services.html')
 
 
 if __name__ == "__main__":
