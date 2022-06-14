@@ -3,6 +3,9 @@
     --color2: #333750;
     --color3: #17191F;
 }
+
+* {font-family: "Georgia", "New Century Schoolbook";}
+
 header, footer {
     padding: 10px;
     background: url(/static/content/bg.png) center center no-repeat;

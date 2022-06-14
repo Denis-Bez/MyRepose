@@ -83,7 +83,7 @@ def email():
             mail.send(msg)
             flash("Заявка успешно отправлена! Мы свяжемся с Вами в ближайшее время", category="success")
         except:
-            flash("Произошла ошибка при отправке заявки. Попробуйте написать нам на почту expert@eg59.ru или позвонить по телефону +7 963 882 0233", category="danger")
+            flash("Произошла ошибка при отправке заявки. Попробуйте написать нам на почту expert@eg59.ru или позвонить по телефону +7 912-88-97-709", category="danger")
         
     return redirect ("/")
 
@@ -115,8 +115,13 @@ def many_pages(name):
             expertise_name=expertise_name[page], title=title[page], description=description[page], 
             background=background[page])
     except:
-        return render_template('services.html')
+        return render_template('page_not_found.html', title="Страница не найдена"), 404
 
+
+# Errors processing
+@application.errorhandler(404)
+def pageNotFound(error):
+    return render_template('page_not_found.html', title="Страница не найдена"), 404
 
 if __name__ == "__main__":
     application.run(debug=True)
