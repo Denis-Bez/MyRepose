@@ -183,8 +183,9 @@ description = {
 }
 
 # Спам фильтр при отправке заявок
+# Проверку спам фильтра можно провести с помощью метода пересечения множеств
 spam_filter = {
-    "name": ["HenryBeide", "Mike", "Julius Sello Malema", "NikkelonMox", "MariaFuro", "JorgeOrilk"],
+    "name": ["HenryBeide", "Mike", "Julius Sello Malema", "NikkelonMox", "MariaFuro", "JorgeOrilk", "Aaril", "Yaseen"],
     "phone": [],
     "email": [],
     "text": ["ОЗОН.ру", "Wildberries.ру", "nуmрhоmaniа"]
