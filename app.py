@@ -1,9 +1,9 @@
 import re
 
-from text_library import title, expertise_name, description, spam_filter, pages, background
+from text_library import spam_filter, content
 
 from config import CONFIG
-from flask import Flask, render_template, redirect, flash, request, url_for
+from flask import Flask, render_template, redirect, flash, url_for
 from flask_mail import Mail, Message
 
 application = Flask (__name__)
@@ -19,25 +19,25 @@ application.config["MAIL_USERNAME"] = CONFIG["MAIL_USERNAME"]
 mail = Mail(application)
 
 # Main html
-@application.route("/")
+@application.route('/')
 def index():
-    return render_template("index.html", title=title["index"])
+    return render_template('index.html', content=content['index'])
 
-@application.route("/services")
+@application.route('/services')
 def services():
-    return render_template("services.html", title=title["services"])
+    return render_template('services.html', content=content['services'])
 
 @application.route("/experts")
 def experts():
-    return render_template("experts.html", title=title["experts"])
+    return render_template("experts.html", content=content["experts"])
 
 @application.route("/contacts")
 def contacts():
-    return render_template("contacts.html", title=title["contacts"])
+    return render_template("contacts.html", content=content["contacts"])
 
 @application.route("/privacy")
 def privacy():
-    return render_template("privacy.html", title=title["privacy"])
+    return render_template("privacy.html", content=content["privacy"])
 
 # Invisible html
 @application.route("/email", methods=["POST", "GET"])
@@ -99,29 +99,20 @@ def yandex_verification():
     return render_template("yandex_dafd13b4bd118941.html")
 
 
-# Test Rout
-#@application.route("/services_new")
-#def test_function():
-#    return render_template("services_new.html")
-
 
 # All exprertises pages. Нужна ли защита от атаки 'внедрения'. М.б. попробовать самому взломать 
-
 @application.route('/services/<name>')
 def many_pages(name):
     try:
-        page = pages[name]
-        return render_template('/services/' + page + '.html', 
-            expertise_name=expertise_name[page], title=title[page], description=description[page], 
-            background=background[page])
+        return render_template('/services/' + name + '.html', content=content[name])
     except:
-        return render_template('page_not_found.html', title="Страница не найдена"), 404
+        return render_template('page_not_found.html', content=content['page_not_found']), 404
 
 
 # Errors processing
 @application.errorhandler(404)
 def pageNotFound(error):
-    return render_template('page_not_found.html', title="Страница не найдена"), 404
+    return render_template('page_not_found.html', content=content['page_not_found']), 404
 
 if __name__ == "__main__":
     application.run(debug=True)

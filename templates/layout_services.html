@@ -3,13 +3,13 @@
 {% block body %}
 
 
-<section class="{{background}} p-5">
+<section class="{{ content['background'] }} p-5">
     <div class="container-fluid">
       <div class="row">
         
         <div class="col-12 text-center">
           <p class="h1 text-white">Выполним независимую <strong class="color1">экспертизу</strong></p><br>
-          <strong class="h1 text-white"><ins>{{expertise_name}}</ins></strong>
+          <strong class="h1 text-white"><ins>{{ content['expertise_name'] }}</ins></strong>
         </div>
       </div>
       <div class="row pt-5">
@@ -62,7 +62,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 pb-3">
-          <p class="h2 m-4">Необходимо провести экспертизу <strong class="color1">{{expertise_name}}</strong>?</p>
+          <p class="h2 m-4">Необходимо провести экспертизу <strong class="color1">{{ content['expertise_name'] }}</strong>?</p>
         </div>
       </div>
 
