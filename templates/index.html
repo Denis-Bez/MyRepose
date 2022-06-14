@@ -12,7 +12,7 @@
 
     <div class="row mr-0 align-items-center">
       <div class="col-lg-7 col-sm-12 mt-3 mb-3">
-        <img src="../static/content/first.jpg" alt="..." class="img-fluid img-thumbnail">
+        <img src="{{ url_for('static', filename='content/first.jpg') }}" alt="..." class="img-fluid img-thumbnail">
       </div>
 
       <div class="col-lg-5 col-sm-12">
@@ -67,8 +67,8 @@
 </section>
 
 
-<section class="bgg2 full-height">
-  <div class="container">
+<section class="bgg2 full-height d-flex align-items-center">
+  <div class="container-fluid">
     <div class="row">
 
       <div class="col-lg-6 col-sm-12 p-4 align-self-center text-white h3">
@@ -85,8 +85,8 @@
 
       </div>
 
-      <div class="col-lg-6 col-sm-12 mt-sm-5 mb-sm-5 text-center">
-        <img src="static/content/about2.jpg" alt="Описание изображения" class="img-fluid img-thumbnail">
+      <div class="col-lg-6 col-sm-12 mt-sm-3 mb-sm-5 text-center">
+        <img src="{{ url_for('static', filename='content/about2.jpg') }}" alt="..." class="img-fluid img-thumbnail">
       </div>
 
     </div>
@@ -94,7 +94,7 @@
 </section>
 
 
-<section class="full-height">
+<section>
   <h2 class="ps-3"><strong>Виды работ по независимой судебной и досудебной экспертизе</strong></h4>
     <div class="container">
 
@@ -124,14 +124,14 @@
 </section>
 
 
-<section class="bgg2 full-height">
+<section class="bgg2 full-height d-flex align-items-center">
   <div class="container-fluid pt-3 pb-3">
     <div class="row">
-      <div class="col-md-6 col-sm-12">
-        <img src="static/content/about3.jpg" alt="Описание изображения" class="img-fluid img-thumbnail">
+      <div class="col-md-6 col-sm-12 my-3">
+        <img src="{{ url_for('static', filename='content/about3.jpg') }}" alt="..." class="img-fluid img-thumbnail">
       </div>
       <div class="col-md-6 col-sm-12 text-white">
-        <h2>О компании<br></h4>
+        <h2>О компании:<br></h4>
           <div class="h4" style="text-indent: 20px;">Многолетний и разностороний опыт работы позволил компании
             ЭНЕРГОгрупп заслужить статус надежного и дисциплинированного
             партнера. Нашими клиентами являются крупные промышленные компании и электрогенерации.<br></div>
