@@ -3,7 +3,7 @@ import re
 from text_library import spam_filter, content
 
 from config import CONFIG
-from flask import Flask, render_template, redirect, flash, url_for
+from flask import Flask, render_template, redirect, flash, url_for, request
 from flask_mail import Mail, Message
 
 application = Flask (__name__)
