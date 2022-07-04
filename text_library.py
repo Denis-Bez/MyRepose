@@ -46,7 +46,7 @@ content = {
 # Спам фильтр при отправке заявок
 # Проверку спам фильтра можно провести с помощью метода пересечения множеств
 spam_filter = {
-    'name': ['HenryBeide', 'Mike', 'Julius Sello Malema', 'NikkelonMox', 'MariaFuro', 'JorgeOrilk', 'Aaril', 'Yaseen'],
+    'name': ['HenryBeide', 'Mike', 'Julius Sello Malema', 'NikkelonMox', 'MariaFuro', 'JorgeOrilk', 'Aaril', 'Yaseen', 'CrytoBeide'],
     'phone': [],
     'email': [],
     'text': ['ОЗОН.ру', 'Wildberries.ру', 'nуmрhоmaniа']
