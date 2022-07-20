@@ -49,5 +49,5 @@ spam_filter = {
     'name': ['HenryBeide', 'Mike', 'Julius Sello Malema', 'NikkelonMox', 'MariaFuro', 'JorgeOrilk', 'Aaril', 'Yaseen', 'CrytoBeide'],
     'phone': [],
     'email': [],
-    'text': ['ОЗОН.ру', 'Wildberries.ру', 'nуmрhоmaniа']
+    'text': ['ОЗОН.ру', 'Wildberries.ру', 'nуmрhоmaniа', 'нимфoманией']
 }
