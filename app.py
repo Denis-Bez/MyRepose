@@ -99,7 +99,6 @@ def yandex_verification():
     return render_template("yandex_dafd13b4bd118941.html")
 
 
-
 # All exprertises pages. Нужна ли защита от атаки 'внедрения'. М.б. попробовать самому взломать 
 @application.route('/services/<name>')
 def many_pages(name):

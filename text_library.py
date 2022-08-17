@@ -48,6 +48,6 @@ content = {
 spam_filter = {
     'name': ['HenryBeide', 'Mike', 'Julius Sello Malema', 'NikkelonMox', 'MariaFuro', 'JorgeOrilk', 'Aaril', 'Yaseen', 'CrytoBeide', 'Eric Jones'],
     'phone': [],
-    'email': [],
-    'text': ['ОЗОН.ру', 'Wildberries.ру', 'nуmрhоmaniа', 'нимфoманией']
+    'email': ['Semya7213@gmail.ru',],
+    'text': ['ОЗОН.ру', 'Wildberries.ру', 'nуmрhоmaniа', 'нимфoманией', 'биceкcyальнa', 'любoвью']
 }
