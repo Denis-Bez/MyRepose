@@ -57,7 +57,7 @@ def email():
         try:
             for spam_name in spam_filter["name"]:
                 if re.search(spam_name, name):
-                    flash("Заявка распознана системой как спам! Попробуйте написать нам на почту expert@eg59.ru или позвонить по телефону +7 963 882 0233", category="danger")
+                    flash("Заявка распознана системой как спам! Попробуйте написать нам на почту expert@eg59.ru или позвонить по телефону +7 912 88 97 709", category="danger")
                     return redirect ("/")
         except:
             print("name: 'None'")
@@ -65,7 +65,7 @@ def email():
         try:
             for spam_text in spam_filter["text"]:
                 if re.search(spam_text, text):
-                    flash("Заявка распознана системой как спам! Попробуйте написать нам на почту expert@eg59.ru или позвонить по телефону +7 963 882 0233", category="danger")
+                    flash("Заявка распознана системой как спам! Попробуйте написать нам на почту expert@eg59.ru или позвонить по телефону +7 912 88 97 709", category="danger")
                     return redirect ("/")
         except:
             print("text: 'None'")
