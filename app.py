@@ -99,7 +99,7 @@ def yandex_verification():
     return render_template("yandex_dafd13b4bd118941.html")
 
 
-# All exprertises pages. Нужна ли защита от атаки 'внедрения'. М.б. попробовать самому взломать 
+# All exprertises pages
 @application.route('/services/<name>')
 def many_pages(name):
     try:
@@ -114,6 +114,6 @@ def pageNotFound(error):
     return render_template('page_not_found.html', content=content['page_not_found']), 404
 
 if __name__ == "__main__":
-    application.run(debug=True)
+    application.run(debug=False)
 
 
