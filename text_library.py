@@ -46,11 +46,17 @@ content = {
 # Спам фильтр при отправке заявок
 # Проверку спам фильтра можно провести с помощью метода пересечения множеств
 spam_filter = {
-    'name': ['HenryBeide', 'Mike', 'Julius', 'NikkelonMox', 'MariaFuro', 'JorgeOrilk', 'Aaril', 'Yaseen', 'CrytoBeide', 'Eric Jones', 'RobertLot', 'Alisa'],
+    'name': ['HenryBeide', 'Mike', 'Julius', 'NikkelonMox', 'MariaFuro', 'JorgeOrilk', 'Aaril', 'Yaseen', 'CrytoBeide', 
+    'Eric Jones', 'RobertLot', 'Alisa', 'Lot'
+    ],
+    
     'phone': [],
+    
     'email': ['Semya7213@gmail.ru',],
+    
     'text': [
         'ОЗОН.ру', 'Wildberries.ру', 'nуmрhоmaniа', 'нимфoманией', 'биceкcyальнa', 'любoвью', '<a href=', '</a>',
-        '\[url=', 'https://', 'http://', 'порно', '/кролика', 'используете базы', 'bit.ly', 'Некая Алиса', 'Букмекеры'
+        '\[url=', 'https://', 'http://', 'порно', '/кролика', 'используете базы', 'bit.ly', 'Некая Алиса', 'Букмекеры',
+        '.buzz', 'SEO продвижение'
     ]
 }
