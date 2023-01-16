@@ -47,7 +47,7 @@ content = {
 # Проверку спам фильтра можно провести с помощью метода пересечения множеств
 spam_filter = {
     'name': ['HenryBeide', 'Mike', 'Julius', 'NikkelonMox', 'MariaFuro', 'JorgeOrilk', 'Aaril', 'Yaseen', 'CrytoBeide', 
-    'Eric Jones', 'RobertLot', 'Alisa', 'Lot'
+    'Eric Jones', 'RobertLot', 'Alisa', 'Lot', 'Donald'
     ],
     
     'phone': [],
@@ -57,6 +57,7 @@ spam_filter = {
     'text': [
         'ОЗОН.ру', 'Wildberries.ру', 'nуmрhоmaniа', 'нимфoманией', 'биceкcyальнa', 'любoвью', '<a href=', '</a>',
         '\[url=', 'https://', 'http://', 'порно', '/кролика', 'используете базы', 'bit.ly', 'Некая Алиса', 'Букмекеры',
-        '.buzz', 'SEO продвижение', 'базы ВЭД', 'продвижением сайтов', 'Подберем новых', 'Domain Rating', 'база Лидов'
+        '.buzz', 'SEO продвижение', 'базы ВЭД', 'продвижением сайтов', 'Подберем новых', 'Domain Rating', 'база Лидов',
+        'Ndjsjdshushf'
     ]
 }
