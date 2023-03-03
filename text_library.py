@@ -48,7 +48,7 @@ content = {
 spam_filter = {
     'name': ['HenryBeide', 'Mike', 'Julius', 'NikkelonMox', 'MariaFuro', 'JorgeOrilk', 'Aaril', 'Yaseen', 'CrytoBeide', 
     'Eric Jones', 'RobertLot', 'Alisa', 'Lot', 'Donald', 'Miprog', 'Vince', 'Totty', 'William', 'Rah', 'Normanzer', 'Elony', 'Mccurry',
-    'Houston', 'Scicchitano', 'Leonida', 'Felts'
+    'Houston', 'Scicchitano', 'Leonida', 'Felts', 'Gillian', 'Rininger' 
     ],
     
     'phone': [],
