@@ -48,7 +48,7 @@ content = {
 spam_filter = {
     'name': ['HenryBeide', 'Mike', 'Julius', 'NikkelonMox', 'MariaFuro', 'JorgeOrilk', 'Aaril', 'Yaseen', 'CrytoBeide', 
     'Eric Jones', 'RobertLot', 'Alisa', 'Lot', 'Donald', 'Miprog', 'Vince', 'Totty', 'William', 'Rah', 'Normanzer', 'Elony', 'Mccurry',
-    'Houston', 'Scicchitano', 'Leonida', 'Felts', 'Gillian', 'Rininger', 'Zss2gTrQ', 'sulmFGD8', 'Kayla', 'Quaile'
+    'Houston', 'Scicchitano', 'Leonida', 'Felts', 'Gillian', 'Rininger', 'Zss2gTrQ', 'sulmFGD8', 'Kayla', 'Quaile', 'StevCXencleni'
     ],
     
     'phone': [],
@@ -59,6 +59,6 @@ spam_filter = {
         'ОЗОН.ру', 'Wildberries.ру', 'nуmрhоmaniа', 'нимфoманией', 'биceкcyальнa', 'любoвью', '<a href=', '</a>',
         '\[url=', 'https://', 'http://', 'Http:', 'порно', '/кролика', 'используете базы', 'bit.ly', 'Некая Алиса', 'Букмекеры',
         '.buzz', 'SEO продвижение', 'базы ВЭД', 'продвижением сайтов', 'Подберем новых', 'Domain Rating', 'база Лидов',
-        'Ndjsjdshushf', 'база Дизайнеров', 'повышу конверсию', 'hached', 'привлекаем клиентов'
+        'Ndjsjdshushf', 'база Дизайнеров', 'повышу конверсию', 'hached', 'привлекаем клиентов', 'запустим рекламу'
     ]
 }
