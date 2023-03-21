@@ -54,7 +54,7 @@ spam_filter = {
     
     'phone': [],
     
-    'email': ['Semya7213@gmail.ru', 'eg-expert.ru'],
+    'email': ['Semya7213@gmail.ru', 'eg-expert.ru', 'jenay454'],
     
     'text': [
         'ОЗОН.ру', 'Wildberries.ру', 'nуmрhоmaniа', 'нимфoманией', 'биceкcyальнa', 'любoвью', '<a href=', '</a>',
