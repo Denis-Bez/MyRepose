@@ -54,13 +54,13 @@ spam_filter = {
     
     'phone': [],
     
-    'email': ['Semya7213@gmail.ru', 'eg-expert.ru', 'jenay454'],
+    'email': ['Semya7213@gmail.ru', 'eg-expert.ru', 'jenay454', 'qcdigitalnu'],
     
     'text': [
         'ОЗОН.ру', 'Wildberries.ру', 'nуmрhоmaniа', 'нимфoманией', 'биceкcyальнa', 'любoвью', '<a href=', '</a>',
         '\[url=', 'https://', 'http://', 'Http:', 'порно', '/кролика', 'используете базы', 'bit.ly', 'Некая Алиса', 'Букмекеры',
         '.buzz', 'SEO продвижение', 'базы ВЭД', 'продвижением сайтов', 'Подберем новых', 'Domain Rating', 'база Лидов',
         'Ndjsjdshushf', 'база Дизайнеров', 'повышу конверсию', 'hached', 'привлекаем клиентов', 'запустим рекламу', 'Представьте, что Ваше коммерческое',
-        'NFT и блокчейн', 'have hacked'
+        'NFT и блокчейн', 'have hacked', 'big potential'
     ]
 }
