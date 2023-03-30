@@ -49,7 +49,7 @@ spam_filter = {
     'name': ['HenryBeide', 'Mike', 'Julius', 'NikkelonMox', 'MariaFuro', 'JorgeOrilk', 'Aaril', 'Yaseen', 'CrytoBeide', 
     'Eric Jones', 'RobertLot', 'Alisa', 'Lot', 'Donald', 'Miprog', 'Vince', 'Totty', 'William', 'Rah', 'Normanzer', 'Elony', 'Mccurry',
     'Houston', 'Scicchitano', 'Leonida', 'Felts', 'Gillian', 'Rininger', 'Zss2gTrQ', 'sulmFGD8', 'Kayla', 'Quaile', 'StevCXencleni',
-    'MikhailRV', 'Efren Lofty'
+    'MikhailRV', 'Efren Lofty', 'Ewan Gross'
     ],
     
     'phone': [],
@@ -61,6 +61,7 @@ spam_filter = {
         '\[url=', 'https://', 'http://', 'Http:', 'порно', '/кролика', 'используете базы', 'bit.ly', 'Некая Алиса', 'Букмекеры',
         '.buzz', 'SEO продвижение', 'базы ВЭД', 'продвижением сайтов', 'Подберем новых', 'Domain Rating', 'база Лидов',
         'Ndjsjdshushf', 'база Дизайнеров', 'повышу конверсию', 'hached', 'привлекаем клиентов', 'запустим рекламу', 'Представьте, что Ваше коммерческое',
-        'NFT и блокчейн', 'have hacked', 'big potential', 'прекрасном настроении', 'приобрести Ваш сайт', 'data-backup-store.com'
+        'NFT и блокчейн', 'have hacked', 'big potential', 'прекрасном настроении', 'приобрести Ваш сайт', 'data-backup-store.com', 
+        'ineffective advertising'
     ]
 }
