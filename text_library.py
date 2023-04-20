@@ -49,7 +49,7 @@ spam_filter = {
     'name': ['HenryBeide', 'Mike', 'Julius', 'NikkelonMox', 'MariaFuro', 'JorgeOrilk', 'Aaril', 'Yaseen', 'CrytoBeide', 
     'Eric Jones', 'RobertLot', 'Alisa', 'Lot', 'Donald', 'Miprog', 'Vince', 'Totty', 'William', 'Rah', 'Normanzer', 'Elony', 'Mccurry',
     'Houston', 'Scicchitano', 'Leonida', 'Felts', 'Gillian', 'Rininger', 'Zss2gTrQ', 'sulmFGD8', 'Kayla', 'Quaile', 'StevCXencleni',
-    'MikhailRV', 'Efren Lofty', 'Ewan Gross', 'Specialist', 'Irma', 'Tutton', 'conttqwzk'
+    'MikhailRV', 'Efren Lofty', 'Ewan Gross', 'Specialist', 'Irma', 'Tutton', 'conttqwzk', 'Edwin', 'Gamons'
     ],
     
     'phone': [],
@@ -63,6 +63,6 @@ spam_filter = {
         'Ndjsjdshushf', 'база Дизайнеров', 'повышу конверсию', 'hached', 'привлекаем клиентов', 'запустим рекламу', 'Представьте, что Ваше коммерческое',
         'NFT и блокчейн', 'have hacked', 'big potential', 'прекрасном настроении', 'приобрести Ваш сайт', 'data-backup-store.com', 
         'ineffective advertising', 'Рассылаем ваши предложения', 'Я частный специалист', 'много недоработок по SEO', 'свежий дизайн',
-        'Предлагаем рассылку', 'Юридический адрес в Новосибирске', 'Заинтересовал ваш продукт, можете перезвонить'
+        'Предлагаем рассылку', 'Юридический адрес в Новосибирске', 'Заинтересовал ваш продукт, можете перезвонить', 'Благотворительный фонд'
     ]
 }
