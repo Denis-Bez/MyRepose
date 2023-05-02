@@ -49,12 +49,12 @@ spam_filter = {
     'name': ['HenryBeide', 'Mike', 'Julius', 'NikkelonMox', 'MariaFuro', 'JorgeOrilk', 'Aaril', 'Yaseen', 'CrytoBeide', 
     'Eric Jones', 'RobertLot', 'Alisa', 'Lot', 'Donald', 'Miprog', 'Vince', 'Totty', 'William', 'Rah', 'Normanzer', 'Elony', 'Mccurry',
     'Houston', 'Scicchitano', 'Leonida', 'Felts', 'Gillian', 'Rininger', 'Zss2gTrQ', 'sulmFGD8', 'Kayla', 'Quaile', 'StevCXencleni',
-    'MikhailRV', 'Efren Lofty', 'Ewan Gross', 'Specialist', 'Irma', 'Tutton', 'conttqwzk', 'Edwin', 'Gamons'
+    'MikhailRV', 'Efren Lofty', 'Ewan Gross', 'Specialist', 'Irma', 'Tutton', 'conttqwzk', 'Edwin', 'Gamons', '94WHt7qW'
     ],
     
     'phone': [],
     
-    'email': ['Semya7213@gmail.ru', 'eg-expert.ru', 'jenay454', 'qcdigitalnu'],
+    'email': ['Semya7213@gmail.ru', 'eg-expert.ru', 'jenay454', 'qcdigitalnu', 'generic'],
     
     'text': [
         'ОЗОН.ру', 'Wildberries.ру', 'nуmрhоmaniа', 'нимфoманией', 'биceкcyальнa', 'любoвью', '<a href=', '</a>',
