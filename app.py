@@ -69,6 +69,14 @@ def email():
                     return redirect ("/")
         except:
             print("text: 'None'")
+        
+        try:
+            for spam_text in spam_filter["email"]:
+                if re.search(spam_text, email):
+                    flash("Заявка распознана системой как спам! Попробуйте написать нам на почту expert@eg59.ru или позвонить по телефону +7 912 88 97 709", category="danger")
+                    return redirect ("/")
+        except:
+            print("text: 'None'")
 
         # Sending mail
         try:
