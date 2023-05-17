@@ -50,7 +50,7 @@ spam_filter = {
     'Eric Jones', 'RobertLot', 'Alisa', 'Lot', 'Donald', 'Miprog', 'Vince', 'Totty', 'William', 'Rah', 'Normanzer', 'Elony', 'Mccurry',
     'Houston', 'Scicchitano', 'Leonida', 'Felts', 'Gillian', 'Rininger', 'Zss2gTrQ', 'sulmFGD8', 'Kayla', 'Quaile', 'StevCXencleni',
     'MikhailRV', 'Efren Lofty', 'Ewan Gross', 'Specialist', 'Irma', 'Tutton', 'conttqwzk', 'Edwin', 'Gamons', '94WHt7qW', 'Ellen', 'Harper',
-    'Prodvigenie', 'Linette', 'McGill', 'Guillermo', 'Woodrich'
+    'Prodvigenie', 'Linette', 'McGill', 'Guillermo', 'Woodrich', 'Екатерина Игоревна'
     ],
     
     'phone': [],
@@ -66,6 +66,6 @@ spam_filter = {
         'ineffective advertising', 'Рассылаем ваши предложения', 'Я частный специалист', 'много недоработок по SEO', 'свежий дизайн',
         'Предлагаем рассылку', 'Юридический адрес в Новосибирске', 'Заинтересовал ваш продукт, можете перезвонить', 'Благотворительный фонд', 
         'по вашим товарам и доставке', 'casino', 'Бесплатно продвинем', 'PPV traffic', 'продвижение сайтов', 'роста продаж', 'Get Real Traffic',
-        'AdWords', 'сайтов'
+        'AdWords', 'сайтов', 'перезвоните в любое удобное время', 'Хотел бы сделать заказ в вашей компании'
     ]
 }
