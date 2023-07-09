@@ -51,7 +51,7 @@ spam_filter = {
     'Houston', 'Scicchitano', 'Leonida', 'Felts', 'Gillian', 'Rininger', 'Zss2gTrQ', 'sulmFGD8', 'Kayla', 'Quaile', 'StevCXencleni',
     'MikhailRV', 'Efren Lofty', 'Ewan Gross', 'Specialist', 'Irma', 'Tutton', 'conttqwzk', 'Edwin', 'Gamons', '94WHt7qW', 'Ellen', 'Harper',
     'Prodvigenie', 'Linette', 'McGill', 'Guillermo', 'Woodrich', 'Екатерина Игоревна', 'French', 'Bulldogs', 'Mohamed', 'Ghazi',
-    'Michael', 'Prowse', 'Shantae', 'Coungeau', 'Bradley'],
+    'Michael', 'Prowse', 'Shantae', 'Coungeau', 'Bradley', 'XRumer', 'Test'],
     
     'phone': [],
     
