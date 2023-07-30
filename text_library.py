@@ -51,7 +51,7 @@ spam_filter = {
     'Houston', 'Scicchitano', 'Leonida', 'Felts', 'Gillian', 'Rininger', 'Zss2gTrQ', 'sulmFGD8', 'Kayla', 'Quaile', 'StevCXencleni',
     'MikhailRV', 'Efren Lofty', 'Ewan Gross', 'Specialist', 'Irma', 'Tutton', 'conttqwzk', 'Edwin', 'Gamons', '94WHt7qW', 'Ellen', 'Harper',
     'Prodvigenie', 'Linette', 'McGill', 'Guillermo', 'Woodrich', 'Екатерина Игоревна', 'French', 'Bulldogs', 'Mohamed', 'Ghazi',
-    'Michael', 'Prowse', 'Shantae', 'Coungeau', 'Bradley', 'XRumer', 'Test', 'http'],
+    'Michael', 'Prowse', 'Shantae', 'Coungeau', 'Bradley', 'XRumer', 'Test', 'http', 'Marvinhen'],
     
     'phone': [],
     
@@ -67,6 +67,7 @@ spam_filter = {
         'Предлагаем рассылку', 'Юридический адрес в Новосибирске', 'Заинтересовал ваш продукт, можете перезвонить', 'Благотворительный фонд', 
         'по вашим товарам и доставке', 'casino', 'Бесплатно продвинем', 'PPV traffic', 'продвижение сайтов', 'роста продаж', 'Get Real Traffic',
         'AdWords', 'сайтов', 'перезвоните в любое удобное время', 'Хотел бы сделать заказ в вашей компании', 'Перезвоните', 'можно вечером даже',
-        'наберите', 'websites', 'index', 'host', 'секс', 'интим', 'рассылки', '4Mac', 'hot', 'www.', '.ru', 'Домофон', 'форекс', 'Телетрейд'
+        'наберите', 'websites', 'index', 'host', 'секс', 'интим', 'рассылки', '4Mac', 'hot', 'www.', '.ru', 'Домофон', 'форекс', 'Телетрейд', 
+        'домофон', '2ГИС', 'Яндекс карт'
     ]
 }
