@@ -51,7 +51,7 @@ spam_filter = {
     'Houston', 'Scicchitano', 'Leonida', 'Felts', 'Gillian', 'Rininger', 'Zss2gTrQ', 'sulmFGD8', 'Kayla', 'Quaile', 'StevCXencleni',
     'MikhailRV', 'Efren Lofty', 'Ewan Gross', 'Specialist', 'Irma', 'Tutton', 'conttqwzk', 'Edwin', 'Gamons', '94WHt7qW', 'Ellen', 'Harper',
     'Prodvigenie', 'Linette', 'McGill', 'Guillermo', 'Woodrich', 'Екатерина Игоревна', 'French', 'Bulldogs', 'Mohamed', 'Ghazi',
-    'Michael', 'Prowse', 'Shantae', 'Coungeau', 'Bradley', 'XRumer', 'Test', 'http', 'Marvinhen', 'Product', 'Irinabuilk'],
+    'Michael', 'Prowse', 'Shantae', 'Coungeau', 'Bradley', 'XRumer', 'Test', 'http', 'Marvinhen', 'Product', 'Irinabuilk', 'Ema', 'Lipsey'],
     
     'phone': [],
     
@@ -68,6 +68,6 @@ spam_filter = {
         'по вашим товарам и доставке', 'casino', 'Бесплатно продвинем', 'traffic', 'продвижение сайтов', 'роста продаж', 'Get Real Traffic',
         'AdWords', 'сайтов', 'перезвоните в любое удобное время', 'Хотел бы сделать заказ в вашей компании', 'Перезвоните', 'можно вечером даже',
         'наберите', 'websites', 'index', 'host', 'секс', 'интим', 'рассылки', '4Mac', 'hot', 'www.', '.ru', 'Домофон', 'форекс', 'Телетрейд', 
-        'домофон', '2ГИС', 'Яндекс карт', 'база компаний', 'такси', 'registering'
+        'домофон', '2ГИС', 'Яндекс карт', 'база компаний', 'такси', 'registering', 'DOCTYPE', 'html', 'HTML'
     ]
 }
