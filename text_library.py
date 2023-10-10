@@ -48,7 +48,7 @@ content = {
 spam_filter = {
     'name': ['HenryBeide', 'Mike', 'Julius', 'NikkelonMox', 'MariaFuro', 'JorgeOrilk', 'Aaril', 'Yaseen', 'CrytoBeide', 
     'Eric Jones', 'RobertLot', 'Alisa', 'Lot', 'Donald', 'Miprog', 'Vince', 'Totty', 'William', 'Rah', 'Normanzer', 'Elony', 'Mccurry',
-    'Houston', 'Scicchitano', 'Leonida', 'Felts', 'Gillian', 'Rininger', 'Zss2gTrQ', 'sulmFGD8', 'Kayla', 'Quaile', 'StevCXencleni',
+    'Houston', 'Scicchitano', 'Leonida', 'Felts', 'Gillian', 'Rininger', 'Zss2gTrQ', 'sulmFGD8', 'Kayla', 'Quaile', 'Stev',
     'MikhailRV', 'Efren Lofty', 'Ewan Gross', 'Specialist', 'Irma', 'Tutton', 'conttqwzk', 'Edwin', 'Gamons', '94WHt7qW', 'Ellen', 'Harper',
     'Prodvigenie', 'Linette', 'McGill', 'Guillermo', 'Woodrich', 'Екатерина Игоревна', 'French', 'Bulldogs', 'Mohamed', 'Ghazi',
     'Michael', 'Prowse', 'Shantae', 'Coungeau', 'Bradley', 'XRumer', 'Test', 'http', 'Marvinhen', 'Product', 'Irinabuilk', 'Ema', 'Lipsey'],
