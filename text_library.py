@@ -71,6 +71,6 @@ spam_filter = {
         'наберите', 'websites', 'index', 'host', 'секс', 'интим', 'рассылки', '4Mac', 'hot', 'www.', '.ru', 'Домофон', 'форекс', 'Телетрейд', 
         'домофон', '2ГИС', 'карт', 'база компаний', 'такси', 'registering', 'DOCTYPE', 'html', 'HTML', 'Продвижение сайта', 'Everly Flowers', 
         'есть базы', 'Oliver', 'Dickerson', 'overflow', 'базы Руководителей', 'website', 'promote', 'traffic', 'sex', 'микрозайм', 'маркетинг', 'потусоваться',
-        'free', 'partners', 'базы', 'site', 'посетите', 'дорогая', 'marketing', 'товар и услуга'
+        'free', 'partners', 'базы', 'site', 'посетите', 'дорогая', 'marketing', 'товар и услуга', 'free'
     ]
 }
