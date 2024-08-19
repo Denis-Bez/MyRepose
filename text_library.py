@@ -72,6 +72,6 @@ spam_filter = {
         'домофон', '2ГИС', 'карт', 'база компаний', 'такси', 'registering', 'DOCTYPE', 'html', 'HTML', 'Продвижение сайта', 'Everly Flowers', 
         'есть базы', 'Oliver', 'Dickerson', 'overflow', 'базы Руководителей', 'website', 'promote', 'traffic', 'sex', 'микрозайм', 'маркетинг', 'потусоваться',
         'free', 'partners', 'базы', 'site', 'посетите', 'дорогая', 'marketing', 'товар и услуга', 'free', 'кокаин', 'кристаллы', 'меф', 'дождаться', 'непослушным', 
-        'кредит'
+        'кредит', '1E5TMy21DM2cR13sQbLukgKBkR3ZSaRbeB', 'RbeB' 
     ]
 }
