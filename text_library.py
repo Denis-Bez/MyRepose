@@ -54,7 +54,7 @@ spam_filter = {
     'Michael', 'Prowse', 'Shantae', 'Coungeau', 'Bradley', 'XRumer', 'Test', 'http', 'Marvinhen', 'Product', 'Irinabuilk', 'Ema', 'Lipsey',
     'Stanley', 'Armando', 'ads', 'traffic', 'Doug', 'Shume', 'Emery', 'Allen', 'Kai', 'hag'],
     
-    'phone': [],
+    'phone': [r'\+1'],
     
     'email': ['Semya7213@gmail.ru', 'eg-expert.ru', 'jenay454', 'qcdigitalnu', 'generic'],
     
