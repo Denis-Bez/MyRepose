@@ -55,6 +55,18 @@ def email():
 
         # Spam filter
         try:
+            if not text:
+                flash("Ошибка поле 'Текст заявки' не должно быть пустым! Попробуйте написать нам на почту expert@eg59.ru или позвонить по телефону +7 (342) 200-85-05", category="danger")
+                return redirect ("/")
+        except:
+            print("name: 'None'")
+        try:
+            if not name:
+                flash("Ошибка поле 'Имя' не должно быть пустым! Попробуйте написать нам на почту expert@eg59.ru или позвонить по телефону +7 (342) 200-85-05", category="danger")
+                return redirect ("/")
+        except:
+            print("name: 'None'")
+        try:
             for spam_name in spam_filter["name"]:
                 if re.search(spam_name, name):
                     flash("Заявка распознана системой как спам! Попробуйте написать нам на почту expert@eg59.ru или позвонить по телефону +7 912 88 97 709", category="danger")
